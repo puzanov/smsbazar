@@ -20,8 +20,8 @@
 
 
 # Pavel can bound for unlimited time as any type
-name=pavel
-password=wpsd
+name=test
+password=test
 timeout=unlimited
 
 
