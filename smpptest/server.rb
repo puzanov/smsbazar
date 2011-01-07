@@ -1,13 +1,9 @@
 #!/usr/bin/env ruby
 
-# Sample SMS gateway that can receive MOs (mobile originated messages) and
-# DRs (delivery reports), and send MTs (mobile terminated messages).
-# MTs are, in the name of simplicity, entered on the command line in the format
-# <sender> <receiver> <message body>
-# MOs and DRs will be dumped to standard out.
-
 require 'rubygems'
 require 'smpp'
+require "net/http"
+require "uri"
 
 LOGFILE = File.dirname(__FILE__) + "/sms_gateway.log"
 Smpp::Base.logger = Logger.new(LOGFILE)
@@ -49,6 +45,17 @@ class SampleGateway
 
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
+
+    Net::HTTP.start('192.168.8.119', 3000) do |http|
+      data = "<adv><phone>123</phone><content>#{pdu.short_message}</content></adv>"
+      headers = {
+        'Content-type' => 'text/xml'
+      }
+      response = http.post('/advs', data, headers); 
+      puts "Code: #{response.code}" 
+    end
+
+response = http.request(request)
   end
 
   def delivery_report_received(transceiver, pdu)
