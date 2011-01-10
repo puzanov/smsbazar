@@ -1,0 +1,1754 @@
+2011.01.10 18:17:54 802 INFO    10 ==============================================================
+2011.01.10 18:17:54 855 INFO    10 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2011.01.10 18:17:54 856 INFO    10 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2011.01.10 18:17:54 856 INFO    10 =  read the license.txt file that was included in the SMPPSim distribution
+2011.01.10 18:17:54 856 INFO    10 =  This is free software, and you are welcome to redistribute it under
+2011.01.10 18:17:54 856 INFO    10 =  certain conditions; Again, see license.txt for details or read the GNU
+2011.01.10 18:17:54 856 INFO    10 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2011.01.10 18:17:54 856 INFO    10 =  ...... end of legal stuff ......
+2011.01.10 18:17:54 856 INFO    10 ==============================================================
+2011.01.10 18:17:54 857 INFO    10 =  
+2011.01.10 18:17:54 857 INFO    10 =  com.seleniumsoftware.SMPPSim 2.6.6
+2011.01.10 18:17:54 857 INFO    10 =  by Martin Woolley (martin@seleniumsoftware.com)
+2011.01.10 18:17:54 857 INFO    10 =  http://www.seleniumsoftware.com
+2011.01.10 18:17:54 857 INFO    10 =  Running with the following parameters:
+2011.01.10 18:17:54 857 INFO    10 =  SMPP_PORT                               :2775
+2011.01.10 18:17:54 857 INFO    10 =  SMPP_CONNECTION_HANDLERS                :10
+2011.01.10 18:17:54 857 INFO    10 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2011.01.10 18:17:54 858 INFO    10 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2011.01.10 18:17:54 858 INFO    10 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2011.01.10 18:17:54 858 INFO    10 =  SMPP_CONNECTION_HANDLERS                :10
+2011.01.10 18:17:54 858 INFO    10 =  INBOUND_QUEUE_CAPACITY                  :1000
+2011.01.10 18:17:54 858 INFO    10 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2011.01.10 18:17:54 865 INFO    10 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2011.01.10 18:17:54 865 INFO    10 =  MAX_TIME_ENROUTE                        :10000
+2011.01.10 18:17:54 867 INFO    10 =  PERCENTAGE_THAT_TRANSITION              :75
+2011.01.10 18:17:54 867 INFO    10 =  PERCENTAGE_DELIVERED                    :90
+2011.01.10 18:17:54 868 INFO    10 =  PERCENTAGE_UNDELIVERABLE                :6
+2011.01.10 18:17:54 868 INFO    10 =  PERCENTAGE_ACCEPTED                     :2
+2011.01.10 18:17:54 868 INFO    10 =  PERCENTAGE_REJECTED                     :2
+2011.01.10 18:17:54 869 INFO    10 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2011.01.10 18:17:54 869 INFO    10 =  OUTBIND_ENABLED                         :false
+2011.01.10 18:17:54 871 INFO    10 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2011.01.10 18:17:54 872 INFO    10 =  OUTBIND_ESME_PORT		                :0
+2011.01.10 18:17:54 872 INFO    10 =  OUTBIND_ESME_PASSWORD                   :password
+2011.01.10 18:17:54 873 INFO    10 =  HTTP_PORT                               :88
+2011.01.10 18:17:54 873 INFO    10 =  HTTP_THREADS                            :1
+2011.01.10 18:17:54 873 INFO    10 =  DOCROOT                                 :www
+2011.01.10 18:17:54 873 INFO    10 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2011.01.10 18:17:54 873 INFO    10 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2011.01.10 18:17:54 873 INFO    10 =  SMSCID                                  :SMPPSim
+2011.01.10 18:17:54 874 INFO    10 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2011.01.10 18:17:54 874 INFO    10 =  DELIVER_MESSAGES_FILE                   :N/A
+2011.01.10 18:17:54 874 INFO    10 =  LOOPBACK                                :false
+2011.01.10 18:17:54 874 INFO    10 =  CAPTURE_REQUESTS_BINARY                 :false
+2011.01.10 18:17:54 874 INFO    10 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2011.01.10 18:17:54 874 INFO    10 =  CAPTURE_RESPONSES_BINARY                :false
+2011.01.10 18:17:54 876 INFO    10 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2011.01.10 18:17:54 877 INFO    10 =  CAPTURE_REQUESTS_DECODED                :false
+2011.01.10 18:17:54 877 INFO    10 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2011.01.10 18:17:54 877 INFO    10 =  CAPTURE_RESPONSES_DECODED               :false
+2011.01.10 18:17:54 877 INFO    10 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2011.01.10 18:17:54 877 INFO    10 =  CALLBACK                                :false
+2011.01.10 18:17:54 877 INFO    10 =  
+2011.01.10 18:17:54 877 INFO    10 ==============================================================
+2011.01.10 18:17:54 899 INFO    11 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 901 INFO    12 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 904 INFO    13 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 906 INFO    14 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 909 INFO    15 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 912 INFO    16 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 914 INFO    17 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 916 INFO    18 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 918 INFO    19 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 925 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:17:54 928 INFO    21 Starting HttpHandler thread. Listening on port 88 for conections
+2011.01.10 18:17:54 930 INFO    22 Starting InboundQueue service....
+2011.01.10 18:17:54 934 INFO    23 Starting Lifecycle Service (OutboundQueue)
+2011.01.10 18:17:54 935 INFO    23 Lifecycle Service: OutboundQueue is empty  - waiting
+2011.01.10 18:17:54 939 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:17:54 940 INFO    24 Starting DelayedInboundQueue service....
+2011.01.10 18:17:58 989 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:17:59 20  INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:17:59 21  INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:17:59 26  INFO    20 Hex dump (45) bytes:
+2011.01.10 18:17:59 27  INFO    20 0000002D:00000009:00000000:4D2AF8F0:
+2011.01.10 18:17:59 27  INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:17:59 27  INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:17:59 29  INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294661872,system_id=smppclient1
+2011.01.10 18:17:59 29  INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:17:59 29  INFO    20 address_range=123
+2011.01.10 18:17:59 29  INFO    20  
+2011.01.10 18:17:59 29  INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:17:59 42  INFO    20 Made RE for 123
+2011.01.10 18:17:59 42  INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:17:59 44  INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:17:59 44  INFO    20 Hex dump (24) bytes:
+2011.01.10 18:17:59 45  INFO    20 00000018:80000009:00000000:4D2AF8F0:
+2011.01.10 18:17:59 45  INFO    20 534D5050:53696D00:
+2011.01.10 18:17:59 45  INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294661872,system_id=SMPPSim
+2011.01.10 18:17:59 46  INFO    20  
+2011.01.10 18:17:59 48  INFO    20 1 receivers connected and bound
+2011.01.10 18:17:59 49  INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:18:09 64  INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:09 64  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:09 64  INFO    20 00000010:00000015:00000000:4D2AF8F1:
+2011.01.10 18:18:09 64  INFO    20 
+2011.01.10 18:18:09 65  INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661873
+2011.01.10 18:18:09 65  INFO    20  
+2011.01.10 18:18:09 65  INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:09 65  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:09 65  INFO    20 00000010:80000015:00000000:4D2AF8F1:
+2011.01.10 18:18:09 65  INFO    20 
+2011.01.10 18:18:09 65  INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661873
+2011.01.10 18:18:09 65  INFO    20  
+2011.01.10 18:18:16 659 INFO    21 HTTP request:/
+2011.01.10 18:18:16 703 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:18:16 705 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:18:16 711 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:18:16 725 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:18:19 84  INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:19 84  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:19 84  INFO    20 00000010:00000015:00000000:4D2AF8F2:
+2011.01.10 18:18:19 85  INFO    20 
+2011.01.10 18:18:19 85  INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661874
+2011.01.10 18:18:19 85  INFO    20  
+2011.01.10 18:18:19 85  INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:19 85  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:19 85  INFO    20 00000010:80000015:00000000:4D2AF8F2:
+2011.01.10 18:18:19 85  INFO    20 
+2011.01.10 18:18:19 85  INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661874
+2011.01.10 18:18:19 85  INFO    20  
+2011.01.10 18:18:19 724 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:18:20 848 INFO    21 HTTP request:/inject_mo.htm
+2011.01.10 18:18:20 895 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:18:20 932 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:18:20 933 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:18:23 939 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:18:26 327 INFO    21 HTTP request:/inject_mo?short_message=Hello+from+SMPPSim&source_addr=4477665544&destination_addr=123&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=0&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:18:26 345 INFO    22 DELIVER_SM:
+2011.01.10 18:18:26 345 INFO    22 Hex dump (64) bytes:
+2011.01.10 18:18:26 345 INFO    22 00000040:00000005:00000000:00000001:
+2011.01.10 18:18:26 345 INFO    22 00010134:34373736:36353534:34000101:
+2011.01.10 18:18:26 345 INFO    22 31323300:00000000:00000000:00124865:
+2011.01.10 18:18:26 345 INFO    22 6C6C6F20:66726F6D:20534D50:5053696D:
+2011.01.10 18:18:26 346 INFO    22 
+2011.01.10 18:18:26 346 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=1,service_type=,source_addr_ton=1
+2011.01.10 18:18:26 346 INFO    22 source_addr_npi=1,source_addr=4477665544,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:18:26 346 INFO    22 destination_addr=123,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:18:26 346 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:18:26 346 INFO    22 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=18
+2011.01.10 18:18:26 346 INFO    22 short_message=Hello from SMPPSim
+2011.01.10 18:18:26 349 INFO    22  
+2011.01.10 18:18:26 349 INFO    22 addressIsServicedByReceiver(123)
+2011.01.10 18:18:26 363 INFO    22 Waiting for response with seqno=1
+2011.01.10 18:18:26 365 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:18:26 365 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:18:26 366 INFO    20 00000011:80000005:00000000:00000001:
+2011.01.10 18:18:26 366 INFO    20 00
+2011.01.10 18:18:26 366 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=1,system_id= 
+2011.01.10 18:18:26 366 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:18:26 368 INFO    20  
+2011.01.10 18:18:26 368 INFO    22 Got response with seqno=1
+2011.01.10 18:18:26 368 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:18:26 389 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:18:26 390 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:18:26 391 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:18:29 167 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:29 167 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:29 167 INFO    20 00000010:00000015:00000000:4D2AF8F3:
+2011.01.10 18:18:29 167 INFO    20 
+2011.01.10 18:18:29 167 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661875
+2011.01.10 18:18:29 167 INFO    20  
+2011.01.10 18:18:29 167 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:29 167 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:29 167 INFO    20 00000010:80000015:00000000:4D2AF8F3:
+2011.01.10 18:18:29 167 INFO    20 
+2011.01.10 18:18:29 168 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661875
+2011.01.10 18:18:29 168 INFO    20  
+2011.01.10 18:18:29 418 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:18:39 184 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:39 185 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:39 185 INFO    20 00000010:00000015:00000000:4D2AF8F4:
+2011.01.10 18:18:39 185 INFO    20 
+2011.01.10 18:18:39 185 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661876
+2011.01.10 18:18:39 185 INFO    20  
+2011.01.10 18:18:39 185 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:39 185 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:39 185 INFO    20 00000010:80000015:00000000:4D2AF8F4:
+2011.01.10 18:18:39 185 INFO    20 
+2011.01.10 18:18:39 185 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661876
+2011.01.10 18:18:39 185 INFO    20  
+2011.01.10 18:18:49 207 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:49 207 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:49 207 INFO    20 00000010:00000015:00000000:4D2AF8F5:
+2011.01.10 18:18:49 207 INFO    20 
+2011.01.10 18:18:49 207 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661877
+2011.01.10 18:18:49 207 INFO    20  
+2011.01.10 18:18:49 207 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:49 207 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:49 207 INFO    20 00000010:80000015:00000000:4D2AF8F5:
+2011.01.10 18:18:49 207 INFO    20 
+2011.01.10 18:18:49 208 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661877
+2011.01.10 18:18:49 208 INFO    20  
+2011.01.10 18:18:54 942 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:18:59 224 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:18:59 224 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:59 224 INFO    20 00000010:00000015:00000000:4D2AF8F6:
+2011.01.10 18:18:59 224 INFO    20 
+2011.01.10 18:18:59 225 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661878
+2011.01.10 18:18:59 225 INFO    20  
+2011.01.10 18:18:59 225 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:18:59 225 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:18:59 225 INFO    20 00000010:80000015:00000000:4D2AF8F6:
+2011.01.10 18:18:59 225 INFO    20 
+2011.01.10 18:18:59 225 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661878
+2011.01.10 18:18:59 225 INFO    20  
+2011.01.10 18:19:09 241 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:09 241 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:09 241 INFO    20 00000010:00000015:00000000:4D2AF8F7:
+2011.01.10 18:19:09 241 INFO    20 
+2011.01.10 18:19:09 241 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661879
+2011.01.10 18:19:09 242 INFO    20  
+2011.01.10 18:19:09 242 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:09 242 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:09 242 INFO    20 00000010:80000015:00000000:4D2AF8F7:
+2011.01.10 18:19:09 242 INFO    20 
+2011.01.10 18:19:09 242 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661879
+2011.01.10 18:19:09 242 INFO    20  
+2011.01.10 18:19:19 260 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:19 261 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:19 261 INFO    20 00000010:00000015:00000000:4D2AF8F8:
+2011.01.10 18:19:19 261 INFO    20 
+2011.01.10 18:19:19 261 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661880
+2011.01.10 18:19:19 261 INFO    20  
+2011.01.10 18:19:19 261 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:19 261 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:19 261 INFO    20 00000010:80000015:00000000:4D2AF8F8:
+2011.01.10 18:19:19 261 INFO    20 
+2011.01.10 18:19:19 261 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661880
+2011.01.10 18:19:19 261 INFO    20  
+2011.01.10 18:19:29 277 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:29 277 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:29 277 INFO    20 00000010:00000015:00000000:4D2AF8F9:
+2011.01.10 18:19:29 277 INFO    20 
+2011.01.10 18:19:29 277 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661881
+2011.01.10 18:19:29 277 INFO    20  
+2011.01.10 18:19:29 277 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:29 277 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:29 277 INFO    20 00000010:80000015:00000000:4D2AF8F9:
+2011.01.10 18:19:29 277 INFO    20 
+2011.01.10 18:19:29 277 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661881
+2011.01.10 18:19:29 278 INFO    20  
+2011.01.10 18:19:39 301 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:39 301 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:39 302 INFO    20 00000010:00000015:00000000:4D2AF8FA:
+2011.01.10 18:19:39 302 INFO    20 
+2011.01.10 18:19:39 302 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661882
+2011.01.10 18:19:39 302 INFO    20  
+2011.01.10 18:19:39 302 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:39 302 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:39 302 INFO    20 00000010:80000015:00000000:4D2AF8FA:
+2011.01.10 18:19:39 302 INFO    20 
+2011.01.10 18:19:39 302 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661882
+2011.01.10 18:19:39 303 INFO    20  
+2011.01.10 18:19:49 321 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:49 321 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:49 321 INFO    20 00000010:00000015:00000000:4D2AF8FB:
+2011.01.10 18:19:49 321 INFO    20 
+2011.01.10 18:19:49 321 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661883
+2011.01.10 18:19:49 321 INFO    20  
+2011.01.10 18:19:49 321 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:49 321 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:49 321 INFO    20 00000010:80000015:00000000:4D2AF8FB:
+2011.01.10 18:19:49 321 INFO    20 
+2011.01.10 18:19:49 321 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661883
+2011.01.10 18:19:49 321 INFO    20  
+2011.01.10 18:19:54 942 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:19:59 340 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:19:59 340 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:59 341 INFO    20 00000010:00000015:00000000:4D2AF8FC:
+2011.01.10 18:19:59 341 INFO    20 
+2011.01.10 18:19:59 341 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661884
+2011.01.10 18:19:59 341 INFO    20  
+2011.01.10 18:19:59 341 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:19:59 341 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:19:59 341 INFO    20 00000010:80000015:00000000:4D2AF8FC:
+2011.01.10 18:19:59 341 INFO    20 
+2011.01.10 18:19:59 341 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661884
+2011.01.10 18:19:59 341 INFO    20  
+2011.01.10 18:20:05 788 INFO    21 HTTP request:/index.htm?refresh
+2011.01.10 18:20:05 841 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:05 845 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:05 845 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:08 859 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:09 360 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:09 360 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:09 360 INFO    20 00000010:00000015:00000000:4D2AF8FD:
+2011.01.10 18:20:09 360 INFO    20 
+2011.01.10 18:20:09 360 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661885
+2011.01.10 18:20:09 360 INFO    20  
+2011.01.10 18:20:09 360 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:09 360 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:09 360 INFO    20 00000010:80000015:00000000:4D2AF8FD:
+2011.01.10 18:20:09 360 INFO    20 
+2011.01.10 18:20:09 360 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661885
+2011.01.10 18:20:09 360 INFO    20  
+2011.01.10 18:20:12 546 INFO    21 HTTP request:/user-guide.htm
+2011.01.10 18:20:12 602 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:12 605 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:12 606 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:15 614 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:17 535 INFO    21 HTTP request:/index.htm?refresh
+2011.01.10 18:20:17 574 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:17 575 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:17 575 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:19 383 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:19 384 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:19 384 INFO    20 00000010:00000015:00000000:4D2AF8FE:
+2011.01.10 18:20:19 384 INFO    20 
+2011.01.10 18:20:19 384 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661886
+2011.01.10 18:20:19 384 INFO    20  
+2011.01.10 18:20:19 384 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:19 384 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:19 384 INFO    20 00000010:80000015:00000000:4D2AF8FE:
+2011.01.10 18:20:19 384 INFO    20 
+2011.01.10 18:20:19 384 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661886
+2011.01.10 18:20:19 384 INFO    20  
+2011.01.10 18:20:20 590 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:22 596 INFO    21 HTTP request:/inject_mo.htm
+2011.01.10 18:20:22 626 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:22 627 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:22 627 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:25 672 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:29 404 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:29 405 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:29 405 INFO    20 00000010:00000015:00000000:4D2AF8FF:
+2011.01.10 18:20:29 405 INFO    20 
+2011.01.10 18:20:29 405 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661887
+2011.01.10 18:20:29 405 INFO    20  
+2011.01.10 18:20:29 405 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:29 405 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:29 405 INFO    20 00000010:80000015:00000000:4D2AF8FF:
+2011.01.10 18:20:29 405 INFO    20 
+2011.01.10 18:20:29 405 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661887
+2011.01.10 18:20:29 405 INFO    20  
+2011.01.10 18:20:36 771 INFO    21 HTTP request:/inject_mo?short_message=1&source_addr=4477665544&destination_addr=123&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=0&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:20:36 774 INFO    22 DELIVER_SM:
+2011.01.10 18:20:36 774 INFO    22 Hex dump (47) bytes:
+2011.01.10 18:20:36 774 INFO    22 0000002F:00000005:00000000:00000002:
+2011.01.10 18:20:36 774 INFO    22 00010134:34373736:36353534:34000101:
+2011.01.10 18:20:36 774 INFO    22 31323300:00000000:00000000:000131
+2011.01.10 18:20:36 777 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=2,service_type=,source_addr_ton=1
+2011.01.10 18:20:36 777 INFO    22 source_addr_npi=1,source_addr=4477665544,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:20:36 777 INFO    22 destination_addr=123,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:20:36 777 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:20:36 777 INFO    22 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=1
+2011.01.10 18:20:36 777 INFO    22 short_message=1
+2011.01.10 18:20:36 777 INFO    22  
+2011.01.10 18:20:36 777 INFO    22 addressIsServicedByReceiver(123)
+2011.01.10 18:20:36 785 INFO    22 Waiting for response with seqno=2
+2011.01.10 18:20:36 836 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:36 837 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:36 838 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:36 877 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:20:36 877 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:20:36 877 INFO    20 00000011:80000005:00000000:00000002:
+2011.01.10 18:20:36 877 INFO    20 00
+2011.01.10 18:20:36 877 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=2,system_id= 
+2011.01.10 18:20:36 878 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:20:36 878 INFO    20  
+2011.01.10 18:20:36 878 INFO    22 Got response with seqno=2
+2011.01.10 18:20:36 878 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:20:39 406 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:39 407 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:39 407 INFO    20 00000010:00000015:00000000:4D2AF900:
+2011.01.10 18:20:39 407 INFO    20 
+2011.01.10 18:20:39 407 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661888
+2011.01.10 18:20:39 407 INFO    20  
+2011.01.10 18:20:39 407 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:39 407 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:39 407 INFO    20 00000010:80000015:00000000:4D2AF900:
+2011.01.10 18:20:39 407 INFO    20 
+2011.01.10 18:20:39 407 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661888
+2011.01.10 18:20:39 407 INFO    20  
+2011.01.10 18:20:39 868 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:49 413 INFO    21 HTTP request:/inject_mo?short_message=pizda&source_addr=4477665544&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=0&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:20:49 417 INFO    22 DELIVER_SM:
+2011.01.10 18:20:49 417 INFO    22 Hex dump (52) bytes:
+2011.01.10 18:20:49 418 INFO    22 00000034:00000005:00000000:00000003:
+2011.01.10 18:20:49 418 INFO    22 00010134:34373736:36353534:34000101:
+2011.01.10 18:20:49 418 INFO    22 31323334:00000000:00000000:00000570:
+2011.01.10 18:20:49 418 INFO    22 697A6461:
+2011.01.10 18:20:49 418 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=3,service_type=,source_addr_ton=1
+2011.01.10 18:20:49 418 INFO    22 source_addr_npi=1,source_addr=4477665544,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:20:49 418 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:20:49 424 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:20:49 426 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:49 426 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:49 426 INFO    20 00000010:00000015:00000000:4D2AF901:
+2011.01.10 18:20:49 426 INFO    20 
+2011.01.10 18:20:49 427 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661889
+2011.01.10 18:20:49 427 INFO    20  
+2011.01.10 18:20:49 427 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:49 427 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:49 427 INFO    20 00000010:80000015:00000000:4D2AF901:
+2011.01.10 18:20:49 427 INFO    20 
+2011.01.10 18:20:49 427 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661889
+2011.01.10 18:20:49 427 INFO    20  
+2011.01.10 18:20:49 432 INFO    22 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=5
+2011.01.10 18:20:49 432 INFO    22 short_message=pizda
+2011.01.10 18:20:49 432 INFO    22  
+2011.01.10 18:20:49 433 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:20:49 436 INFO    22 Waiting for response with seqno=3
+2011.01.10 18:20:49 441 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:20:49 441 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:20:49 441 INFO    20 00000011:80000005:00000000:00000003:
+2011.01.10 18:20:49 441 INFO    20 00
+2011.01.10 18:20:49 441 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=3,system_id= 
+2011.01.10 18:20:49 441 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:20:49 441 INFO    20  
+2011.01.10 18:20:49 442 INFO    22 Got response with seqno=3
+2011.01.10 18:20:49 442 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:20:49 471 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:20:49 472 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:20:49 473 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:20:52 500 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:20:54 943 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:20:59 468 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:20:59 469 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:59 469 INFO    20 00000010:00000015:00000000:4D2AF902:
+2011.01.10 18:20:59 469 INFO    20 
+2011.01.10 18:20:59 469 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661890
+2011.01.10 18:20:59 469 INFO    20  
+2011.01.10 18:20:59 469 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:20:59 469 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:20:59 469 INFO    20 00000010:80000015:00000000:4D2AF902:
+2011.01.10 18:20:59 469 INFO    20 
+2011.01.10 18:20:59 469 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661890
+2011.01.10 18:20:59 469 INFO    20  
+2011.01.10 18:21:09 497 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:09 497 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:09 497 INFO    20 00000010:00000015:00000000:4D2AF903:
+2011.01.10 18:21:09 497 INFO    20 
+2011.01.10 18:21:09 497 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661891
+2011.01.10 18:21:09 497 INFO    20  
+2011.01.10 18:21:09 497 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:09 497 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:09 497 INFO    20 00000010:80000015:00000000:4D2AF903:
+2011.01.10 18:21:09 498 INFO    20 
+2011.01.10 18:21:09 498 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661891
+2011.01.10 18:21:09 498 INFO    20  
+2011.01.10 18:21:19 516 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:19 516 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:19 516 INFO    20 00000010:00000015:00000000:4D2AF904:
+2011.01.10 18:21:19 516 INFO    20 
+2011.01.10 18:21:19 516 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661892
+2011.01.10 18:21:19 516 INFO    20  
+2011.01.10 18:21:19 516 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:19 516 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:19 516 INFO    20 00000010:80000015:00000000:4D2AF904:
+2011.01.10 18:21:19 516 INFO    20 
+2011.01.10 18:21:19 516 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661892
+2011.01.10 18:21:19 516 INFO    20  
+2011.01.10 18:21:29 535 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:29 535 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:29 535 INFO    20 00000010:00000015:00000000:4D2AF905:
+2011.01.10 18:21:29 535 INFO    20 
+2011.01.10 18:21:29 535 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661893
+2011.01.10 18:21:29 535 INFO    20  
+2011.01.10 18:21:29 535 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:29 535 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:29 535 INFO    20 00000010:80000015:00000000:4D2AF905:
+2011.01.10 18:21:29 536 INFO    20 
+2011.01.10 18:21:29 536 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661893
+2011.01.10 18:21:29 536 INFO    20  
+2011.01.10 18:21:39 551 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:39 551 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:39 552 INFO    20 00000010:00000015:00000000:4D2AF906:
+2011.01.10 18:21:39 552 INFO    20 
+2011.01.10 18:21:39 552 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661894
+2011.01.10 18:21:39 552 INFO    20  
+2011.01.10 18:21:39 552 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:39 552 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:39 552 INFO    20 00000010:80000015:00000000:4D2AF906:
+2011.01.10 18:21:39 552 INFO    20 
+2011.01.10 18:21:39 552 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661894
+2011.01.10 18:21:39 552 INFO    20  
+2011.01.10 18:21:49 570 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:49 570 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:49 570 INFO    20 00000010:00000015:00000000:4D2AF907:
+2011.01.10 18:21:49 570 INFO    20 
+2011.01.10 18:21:49 570 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661895
+2011.01.10 18:21:49 570 INFO    20  
+2011.01.10 18:21:49 570 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:49 570 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:49 570 INFO    20 00000010:80000015:00000000:4D2AF907:
+2011.01.10 18:21:49 571 INFO    20 
+2011.01.10 18:21:49 571 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661895
+2011.01.10 18:21:49 571 INFO    20  
+2011.01.10 18:21:54 943 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:21:59 588 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:21:59 589 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:59 589 INFO    20 00000010:00000015:00000000:4D2AF908:
+2011.01.10 18:21:59 589 INFO    20 
+2011.01.10 18:21:59 589 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661896
+2011.01.10 18:21:59 589 INFO    20  
+2011.01.10 18:21:59 589 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:21:59 589 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:21:59 589 INFO    20 00000010:80000015:00000000:4D2AF908:
+2011.01.10 18:21:59 589 INFO    20 
+2011.01.10 18:21:59 589 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661896
+2011.01.10 18:21:59 589 INFO    20  
+2011.01.10 18:21:59 875 INFO    21 HTTP request:/inject_mo?short_message=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=0&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:21:59 876 INFO    22 DELIVER_SM:
+2011.01.10 18:21:59 877 INFO    22 Hex dump (68) bytes:
+2011.01.10 18:21:59 877 INFO    22 00000044:00000005:00000000:00000004:
+2011.01.10 18:21:59 877 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:21:59 877 INFO    22 01013132:33340000:00000000:00000000:
+2011.01.10 18:21:59 877 INFO    22 133F3F3F:3F3F3F3F:3F203F3F:3F3F3F3F:
+2011.01.10 18:21:59 877 INFO    22 3F3F3F21:
+2011.01.10 18:21:59 877 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=4,service_type=,source_addr_ton=1
+2011.01.10 18:21:59 877 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:21:59 877 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:21:59 877 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:21:59 877 INFO    22 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=19
+2011.01.10 18:21:59 878 INFO    22 short_message=???????? ?????????!
+2011.01.10 18:21:59 878 INFO    22  
+2011.01.10 18:21:59 878 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:21:59 885 INFO    22 Waiting for response with seqno=4
+2011.01.10 18:21:59 886 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:21:59 890 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:21:59 890 INFO    20 00000011:80000005:00000000:00000004:
+2011.01.10 18:21:59 890 INFO    20 00
+2011.01.10 18:21:59 891 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=4,system_id= 
+2011.01.10 18:21:59 891 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:21:59 891 INFO    20  
+2011.01.10 18:21:59 892 INFO    22 Got response with seqno=4
+2011.01.10 18:21:59 892 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:21:59 923 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:21:59 928 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:21:59 929 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:22:02 959 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:22:09 672 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:22:09 672 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:09 672 INFO    20 00000010:00000015:00000000:4D2AF909:
+2011.01.10 18:22:09 672 INFO    20 
+2011.01.10 18:22:09 672 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661897
+2011.01.10 18:22:09 673 INFO    20  
+2011.01.10 18:22:09 673 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:22:09 673 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:09 673 INFO    20 00000010:80000015:00000000:4D2AF909:
+2011.01.10 18:22:09 673 INFO    20 
+2011.01.10 18:22:09 673 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661897
+2011.01.10 18:22:09 673 INFO    20  
+2011.01.10 18:22:19 690 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:22:19 690 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:19 690 INFO    20 00000010:00000015:00000000:4D2AF90A:
+2011.01.10 18:22:19 690 INFO    20 
+2011.01.10 18:22:19 690 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661898
+2011.01.10 18:22:19 690 INFO    20  
+2011.01.10 18:22:19 690 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:22:19 690 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:19 690 INFO    20 00000010:80000015:00000000:4D2AF90A:
+2011.01.10 18:22:19 690 INFO    20 
+2011.01.10 18:22:19 691 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661898
+2011.01.10 18:22:19 691 INFO    20  
+2011.01.10 18:22:29 733 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:22:29 733 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:29 733 INFO    20 00000010:00000015:00000000:4D2AF90B:
+2011.01.10 18:22:29 733 INFO    20 
+2011.01.10 18:22:29 733 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661899
+2011.01.10 18:22:29 733 INFO    20  
+2011.01.10 18:22:29 733 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:22:29 733 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:29 734 INFO    20 00000010:80000015:00000000:4D2AF90B:
+2011.01.10 18:22:29 734 INFO    20 
+2011.01.10 18:22:29 734 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661899
+2011.01.10 18:22:29 734 INFO    20  
+2011.01.10 18:22:39 753 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:22:39 753 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:39 753 INFO    20 00000010:00000015:00000000:4D2AF90C:
+2011.01.10 18:22:39 753 INFO    20 
+2011.01.10 18:22:39 753 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661900
+2011.01.10 18:22:39 753 INFO    20  
+2011.01.10 18:22:39 753 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:22:39 753 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:39 754 INFO    20 00000010:80000015:00000000:4D2AF90C:
+2011.01.10 18:22:39 754 INFO    20 
+2011.01.10 18:22:39 754 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661900
+2011.01.10 18:22:39 754 INFO    20  
+2011.01.10 18:22:49 773 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:22:49 773 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:49 773 INFO    20 00000010:00000015:00000000:4D2AF90D:
+2011.01.10 18:22:49 773 INFO    20 
+2011.01.10 18:22:49 773 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294661901
+2011.01.10 18:22:49 774 INFO    20  
+2011.01.10 18:22:49 774 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:22:49 774 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:22:49 774 INFO    20 00000010:80000015:00000000:4D2AF90D:
+2011.01.10 18:22:49 774 INFO    20 
+2011.01.10 18:22:49 774 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294661901
+2011.01.10 18:22:49 774 INFO    20  
+2011.01.10 18:22:54 944 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:22:58 211 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:22:58 211 INFO    20 null
+2011.01.10 18:22:58 212 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:23:08 801 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:23:08 801 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:23:08 805 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:23:08 805 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:23:08 805 INFO    20 0000002D:00000009:00000000:4D2AFA2A:
+2011.01.10 18:23:08 806 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:23:08 806 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:23:08 806 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294662186,system_id=smppclient1
+2011.01.10 18:23:08 806 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:23:08 806 INFO    20 address_range=123
+2011.01.10 18:23:08 806 INFO    20  
+2011.01.10 18:23:08 806 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:23:08 806 INFO    20 Made RE for 123
+2011.01.10 18:23:08 806 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:23:08 808 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:23:08 808 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:23:08 808 INFO    20 00000018:80000009:00000000:4D2AFA2A:
+2011.01.10 18:23:08 808 INFO    20 534D5050:53696D00:
+2011.01.10 18:23:08 809 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294662186,system_id=SMPPSim
+2011.01.10 18:23:08 809 INFO    20  
+2011.01.10 18:23:08 809 INFO    20 2 receivers connected and bound
+2011.01.10 18:23:08 809 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:23:18 827 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:23:18 828 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:18 828 INFO    20 00000010:00000015:00000000:4D2AFA2B:
+2011.01.10 18:23:18 828 INFO    20 
+2011.01.10 18:23:18 828 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662187
+2011.01.10 18:23:18 828 INFO    20  
+2011.01.10 18:23:18 828 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:23:18 828 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:18 828 INFO    20 00000010:80000015:00000000:4D2AFA2B:
+2011.01.10 18:23:18 828 INFO    20 
+2011.01.10 18:23:18 828 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662187
+2011.01.10 18:23:18 828 INFO    20  
+2011.01.10 18:23:19 828 INFO    21 HTTP request:/inject_mo?short_message=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:23:19 856 INFO    22 DELIVER_SM:
+2011.01.10 18:23:19 856 INFO    22 Hex dump (87) bytes:
+2011.01.10 18:23:19 856 INFO    22 00000057:00000005:00000000:00000005:
+2011.01.10 18:23:19 857 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:23:19 857 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:23:19 857 INFO    22 26042204:35044104:42043E04:32043E04:
+2011.01.10 18:23:19 857 INFO    22 35002004:41043E04:3E043104:49043504:
+2011.01.10 18:23:19 857 INFO    22 3D043804:350021
+2011.01.10 18:23:19 857 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=5,service_type=,source_addr_ton=1
+2011.01.10 18:23:19 857 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:23:19 857 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:23:19 857 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:23:19 857 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=38
+2011.01.10 18:23:19 857 INFO    22 short_message="5AB>2>5  A>>1I5=85 !
+2011.01.10 18:23:19 857 INFO    22  
+2011.01.10 18:23:19 857 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:23:19 864 INFO    22 Waiting for response with seqno=5
+2011.01.10 18:23:19 865 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:23:19 866 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:23:19 866 INFO    20 00000011:80000005:00000000:00000005:
+2011.01.10 18:23:19 866 INFO    20 00
+2011.01.10 18:23:19 866 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=5,system_id= 
+2011.01.10 18:23:19 866 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:23:19 866 INFO    20  
+2011.01.10 18:23:19 870 INFO    22 Got response with seqno=5
+2011.01.10 18:23:19 871 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:23:19 880 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:23:19 880 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:23:19 881 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:23:22 901 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:23:28 892 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:23:28 893 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:28 893 INFO    20 00000010:00000015:00000000:4D2AFA2C:
+2011.01.10 18:23:28 893 INFO    20 
+2011.01.10 18:23:28 893 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662188
+2011.01.10 18:23:28 893 INFO    20  
+2011.01.10 18:23:28 893 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:23:28 893 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:28 893 INFO    20 00000010:80000015:00000000:4D2AFA2C:
+2011.01.10 18:23:28 893 INFO    20 
+2011.01.10 18:23:28 893 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662188
+2011.01.10 18:23:28 893 INFO    20  
+2011.01.10 18:23:38 915 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:23:38 915 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:38 916 INFO    20 00000010:00000015:00000000:4D2AFA2D:
+2011.01.10 18:23:38 916 INFO    20 
+2011.01.10 18:23:38 916 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662189
+2011.01.10 18:23:38 916 INFO    20  
+2011.01.10 18:23:38 916 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:23:38 916 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:38 916 INFO    20 00000010:80000015:00000000:4D2AFA2D:
+2011.01.10 18:23:38 916 INFO    20 
+2011.01.10 18:23:38 917 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662189
+2011.01.10 18:23:38 917 INFO    20  
+2011.01.10 18:23:48 935 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:23:48 935 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:48 935 INFO    20 00000010:00000015:00000000:4D2AFA2E:
+2011.01.10 18:23:48 935 INFO    20 
+2011.01.10 18:23:48 935 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662190
+2011.01.10 18:23:48 935 INFO    20  
+2011.01.10 18:23:48 935 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:23:48 935 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:48 936 INFO    20 00000010:80000015:00000000:4D2AFA2E:
+2011.01.10 18:23:48 936 INFO    20 
+2011.01.10 18:23:48 936 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662190
+2011.01.10 18:23:48 936 INFO    20  
+2011.01.10 18:23:54 944 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:23:58 954 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:23:58 954 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:58 954 INFO    20 00000010:00000015:00000000:4D2AFA2F:
+2011.01.10 18:23:58 954 INFO    20 
+2011.01.10 18:23:58 954 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662191
+2011.01.10 18:23:58 954 INFO    20  
+2011.01.10 18:23:58 954 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:23:58 955 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:23:58 955 INFO    20 00000010:80000015:00000000:4D2AFA2F:
+2011.01.10 18:23:58 955 INFO    20 
+2011.01.10 18:23:58 955 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662191
+2011.01.10 18:23:58 955 INFO    20  
+2011.01.10 18:24:08 973 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:24:08 973 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:24:08 973 INFO    20 00000010:00000015:00000000:4D2AFA30:
+2011.01.10 18:24:08 973 INFO    20 
+2011.01.10 18:24:08 973 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662192
+2011.01.10 18:24:08 973 INFO    20  
+2011.01.10 18:24:08 973 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:24:08 973 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:24:08 973 INFO    20 00000010:80000015:00000000:4D2AFA30:
+2011.01.10 18:24:08 973 INFO    20 
+2011.01.10 18:24:08 974 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662192
+2011.01.10 18:24:08 974 INFO    20  
+2011.01.10 18:24:13 34  WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:24:13 35  INFO    20 null
+2011.01.10 18:24:13 35  INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:24:53 65  INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:24:53 66  INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:24:53 73  INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:24:53 73  INFO    20 Hex dump (45) bytes:
+2011.01.10 18:24:53 73  INFO    20 0000002D:00000009:00000000:4D2AFA93:
+2011.01.10 18:24:53 73  INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:24:53 73  INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:24:53 74  INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294662291,system_id=smppclient1
+2011.01.10 18:24:53 74  INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:24:53 74  INFO    20 address_range=123
+2011.01.10 18:24:53 74  INFO    20  
+2011.01.10 18:24:53 74  INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:24:53 74  INFO    20 Made RE for 123
+2011.01.10 18:24:53 74  INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:24:53 74  INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:24:53 74  INFO    20 Hex dump (24) bytes:
+2011.01.10 18:24:53 74  INFO    20 00000018:80000009:00000000:4D2AFA93:
+2011.01.10 18:24:53 74  INFO    20 534D5050:53696D00:
+2011.01.10 18:24:53 74  INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294662291,system_id=SMPPSim
+2011.01.10 18:24:53 76  INFO    20  
+2011.01.10 18:24:53 77  INFO    20 3 receivers connected and bound
+2011.01.10 18:24:53 77  INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:24:54 944 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:25:02 555 INFO    21 HTTP request:/inject_mo?short_message=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:25:02 558 INFO    22 DELIVER_SM:
+2011.01.10 18:25:02 564 INFO    22 Hex dump (87) bytes:
+2011.01.10 18:25:02 564 INFO    22 00000057:00000005:00000000:00000006:
+2011.01.10 18:25:02 564 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:25:02 564 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:25:02 564 INFO    22 26042204:35044104:42043E04:32043E04:
+2011.01.10 18:25:02 565 INFO    22 35002004:41043E04:3E043104:49043504:
+2011.01.10 18:25:02 565 INFO    22 3D043804:350021
+2011.01.10 18:25:02 565 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=6,service_type=,source_addr_ton=1
+2011.01.10 18:25:02 565 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:25:02 565 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:25:02 565 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:25:02 565 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=38
+2011.01.10 18:25:02 565 INFO    22 short_message="5AB>2>5  A>>1I5=85 !
+2011.01.10 18:25:02 565 INFO    22  
+2011.01.10 18:25:02 565 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:25:02 576 INFO    22 Waiting for response with seqno=6
+2011.01.10 18:25:02 580 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:25:02 581 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:25:02 581 INFO    20 00000011:80000005:00000000:00000006:
+2011.01.10 18:25:02 581 INFO    20 00
+2011.01.10 18:25:02 581 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=6,system_id= 
+2011.01.10 18:25:02 581 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:25:02 581 INFO    20  
+2011.01.10 18:25:02 581 INFO    22 Got response with seqno=6
+2011.01.10 18:25:02 581 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:25:02 590 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:25:02 592 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:25:02 595 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:25:03 123 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:25:03 123 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:03 124 INFO    20 00000010:00000015:00000000:4D2AFA94:
+2011.01.10 18:25:03 124 INFO    20 
+2011.01.10 18:25:03 124 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662292
+2011.01.10 18:25:03 124 INFO    20  
+2011.01.10 18:25:03 124 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:25:03 124 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:03 124 INFO    20 00000010:80000015:00000000:4D2AFA94:
+2011.01.10 18:25:03 124 INFO    20 
+2011.01.10 18:25:03 124 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662292
+2011.01.10 18:25:03 124 INFO    20  
+2011.01.10 18:25:04 113 INFO    21 HTTP request:/inject_mo?short_message=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:25:04 114 INFO    22 DELIVER_SM:
+2011.01.10 18:25:04 114 INFO    22 Hex dump (87) bytes:
+2011.01.10 18:25:04 114 INFO    22 00000057:00000005:00000000:00000007:
+2011.01.10 18:25:04 114 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:25:04 115 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:25:04 115 INFO    22 26042204:35044104:42043E04:32043E04:
+2011.01.10 18:25:04 115 INFO    22 35002004:41043E04:3E043104:49043504:
+2011.01.10 18:25:04 115 INFO    22 3D043804:350021
+2011.01.10 18:25:04 115 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=7,service_type=,source_addr_ton=1
+2011.01.10 18:25:04 115 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:25:04 115 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:25:04 115 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:25:04 115 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=38
+2011.01.10 18:25:04 115 INFO    22 short_message="5AB>2>5  A>>1I5=85 !
+2011.01.10 18:25:04 115 INFO    22  
+2011.01.10 18:25:04 115 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:25:04 119 INFO    22 Waiting for response with seqno=7
+2011.01.10 18:25:04 131 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:25:04 131 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:25:04 132 INFO    20 00000011:80000005:00000000:00000007:
+2011.01.10 18:25:04 132 INFO    20 00
+2011.01.10 18:25:04 132 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=7,system_id= 
+2011.01.10 18:25:04 132 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:25:04 132 INFO    20  
+2011.01.10 18:25:04 133 INFO    22 Got response with seqno=7
+2011.01.10 18:25:04 133 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:25:04 151 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:25:04 152 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:25:04 153 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:25:07 131 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:25:07 138 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:25:13 157 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:25:13 158 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:13 158 INFO    20 00000010:00000015:00000000:4D2AFA95:
+2011.01.10 18:25:13 158 INFO    20 
+2011.01.10 18:25:13 158 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662293
+2011.01.10 18:25:13 158 INFO    20  
+2011.01.10 18:25:13 158 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:25:13 158 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:13 158 INFO    20 00000010:80000015:00000000:4D2AFA95:
+2011.01.10 18:25:13 158 INFO    20 
+2011.01.10 18:25:13 158 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662293
+2011.01.10 18:25:13 158 INFO    20  
+2011.01.10 18:25:23 175 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:25:23 175 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:23 175 INFO    20 00000010:00000015:00000000:4D2AFA96:
+2011.01.10 18:25:23 175 INFO    20 
+2011.01.10 18:25:23 175 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662294
+2011.01.10 18:25:23 175 INFO    20  
+2011.01.10 18:25:23 175 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:25:23 175 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:23 175 INFO    20 00000010:80000015:00000000:4D2AFA96:
+2011.01.10 18:25:23 176 INFO    20 
+2011.01.10 18:25:23 176 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662294
+2011.01.10 18:25:23 176 INFO    20  
+2011.01.10 18:25:33 192 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:25:33 192 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:33 192 INFO    20 00000010:00000015:00000000:4D2AFA97:
+2011.01.10 18:25:33 192 INFO    20 
+2011.01.10 18:25:33 192 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662295
+2011.01.10 18:25:33 192 INFO    20  
+2011.01.10 18:25:33 193 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:25:33 193 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:25:33 193 INFO    20 00000010:80000015:00000000:4D2AFA97:
+2011.01.10 18:25:33 193 INFO    20 
+2011.01.10 18:25:33 193 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662295
+2011.01.10 18:25:33 193 INFO    20  
+2011.01.10 18:25:37 291 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:25:37 291 INFO    20 null
+2011.01.10 18:25:37 292 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:25:54 945 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:26:54 945 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:27:54 945 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:28:54 946 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:29:50 276 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:29:50 276 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:29:50 280 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:29:50 280 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:29:50 280 INFO    20 0000002D:00000009:00000000:4D2AFBBC:
+2011.01.10 18:29:50 280 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:29:50 280 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:29:50 280 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294662588,system_id=smppclient1
+2011.01.10 18:29:50 280 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:29:50 280 INFO    20 address_range=123
+2011.01.10 18:29:50 280 INFO    20  
+2011.01.10 18:29:50 280 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:29:50 280 INFO    20 Made RE for 123
+2011.01.10 18:29:50 281 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:29:50 281 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:29:50 281 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:29:50 281 INFO    20 00000018:80000009:00000000:4D2AFBBC:
+2011.01.10 18:29:50 281 INFO    20 534D5050:53696D00:
+2011.01.10 18:29:50 281 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294662588,system_id=SMPPSim
+2011.01.10 18:29:50 281 INFO    20  
+2011.01.10 18:29:50 281 INFO    20 4 receivers connected and bound
+2011.01.10 18:29:50 281 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:29:54 946 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:29:59 954 INFO    21 HTTP request:/inject_mo?short_message=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:29:59 955 INFO    22 DELIVER_SM:
+2011.01.10 18:29:59 956 INFO    22 Hex dump (87) bytes:
+2011.01.10 18:29:59 956 INFO    22 00000057:00000005:00000000:00000008:
+2011.01.10 18:29:59 956 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:29:59 956 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:29:59 956 INFO    22 26042204:35044104:42043E04:32043E04:
+2011.01.10 18:29:59 956 INFO    22 35002004:41043E04:3E043104:49043504:
+2011.01.10 18:29:59 956 INFO    22 3D043804:350021
+2011.01.10 18:29:59 956 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=8,service_type=,source_addr_ton=1
+2011.01.10 18:29:59 956 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:29:59 956 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:29:59 956 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:29:59 956 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=38
+2011.01.10 18:29:59 956 INFO    22 short_message="5AB>2>5  A>>1I5=85 !
+2011.01.10 18:29:59 956 INFO    22  
+2011.01.10 18:29:59 956 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:29:59 967 INFO    22 Waiting for response with seqno=8
+2011.01.10 18:29:59 975 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:29:59 975 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:29:59 976 INFO    20 00000011:80000005:00000000:00000008:
+2011.01.10 18:29:59 976 INFO    20 00
+2011.01.10 18:29:59 976 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=8,system_id= 
+2011.01.10 18:29:59 976 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:29:59 976 INFO    20  
+2011.01.10 18:29:59 980 INFO    22 Got response with seqno=8
+2011.01.10 18:29:59 980 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:30:00 7   INFO    21 HTTP request:/css/style.css
+2011.01.10 18:30:00 22  INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:30:00 31  INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:30:00 343 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:30:00 343 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:30:00 343 INFO    20 00000010:00000015:00000000:4D2AFBBD:
+2011.01.10 18:30:00 343 INFO    20 
+2011.01.10 18:30:00 343 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662589
+2011.01.10 18:30:00 343 INFO    20  
+2011.01.10 18:30:00 343 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:30:00 343 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:30:00 343 INFO    20 00000010:80000015:00000000:4D2AFBBD:
+2011.01.10 18:30:00 343 INFO    20 
+2011.01.10 18:30:00 343 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662589
+2011.01.10 18:30:00 343 INFO    20  
+2011.01.10 18:30:03 40  INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:30:10 359 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:30:10 359 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:30:10 359 INFO    20 00000010:00000015:00000000:4D2AFBBE:
+2011.01.10 18:30:10 359 INFO    20 
+2011.01.10 18:30:10 359 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662590
+2011.01.10 18:30:10 359 INFO    20  
+2011.01.10 18:30:10 360 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:30:10 360 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:30:10 360 INFO    20 00000010:80000015:00000000:4D2AFBBE:
+2011.01.10 18:30:10 360 INFO    20 
+2011.01.10 18:30:10 360 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662590
+2011.01.10 18:30:10 360 INFO    20  
+2011.01.10 18:30:12 506 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:30:12 506 INFO    20 null
+2011.01.10 18:30:12 507 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:30:54 946 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:31:54 947 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:32:54 947 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:33:54 947 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:34:54 948 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:34:58 482 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:34:58 482 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:34:58 489 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:34:58 490 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:34:58 490 INFO    20 0000002D:00000009:00000000:4D2AFCF0:
+2011.01.10 18:34:58 490 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:34:58 490 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:34:58 490 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294662896,system_id=smppclient1
+2011.01.10 18:34:58 490 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:34:58 490 INFO    20 address_range=123
+2011.01.10 18:34:58 490 INFO    20  
+2011.01.10 18:34:58 490 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:34:58 490 INFO    20 Made RE for 123
+2011.01.10 18:34:58 490 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:34:58 490 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:34:58 490 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:34:58 491 INFO    20 00000018:80000009:00000000:4D2AFCF0:
+2011.01.10 18:34:58 491 INFO    20 534D5050:53696D00:
+2011.01.10 18:34:58 491 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294662896,system_id=SMPPSim
+2011.01.10 18:34:58 491 INFO    20  
+2011.01.10 18:34:58 491 INFO    20 5 receivers connected and bound
+2011.01.10 18:34:58 491 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:35:08 518 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:35:08 518 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:08 518 INFO    20 00000010:00000015:00000000:4D2AFCF1:
+2011.01.10 18:35:08 518 INFO    20 
+2011.01.10 18:35:08 519 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662897
+2011.01.10 18:35:08 519 INFO    20  
+2011.01.10 18:35:08 519 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:35:08 519 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:08 519 INFO    20 00000010:80000015:00000000:4D2AFCF1:
+2011.01.10 18:35:08 519 INFO    20 
+2011.01.10 18:35:08 519 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662897
+2011.01.10 18:35:08 519 INFO    20  
+2011.01.10 18:35:17 479 INFO    21 HTTP request:/inject_mo?short_message=%D0%9F%D0%A0%D0%98%D0%92%D0%95%D0%A2%21&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:35:17 485 INFO    22 DELIVER_SM:
+2011.01.10 18:35:17 485 INFO    22 Hex dump (63) bytes:
+2011.01.10 18:35:17 485 INFO    22 0000003F:00000005:00000000:00000009:
+2011.01.10 18:35:17 485 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:35:17 485 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:35:17 485 INFO    22 0E041F04:20041804:12041504:220021
+2011.01.10 18:35:17 485 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=9,service_type=,source_addr_ton=1
+2011.01.10 18:35:17 485 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:35:17 485 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:35:17 485 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:35:17 485 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=14
+2011.01.10 18:35:17 485 INFO    22 short_message= " !
+2011.01.10 18:35:17 485 INFO    22  
+2011.01.10 18:35:17 485 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:35:17 494 INFO    22 Waiting for response with seqno=9
+2011.01.10 18:35:17 497 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:35:17 497 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:35:17 498 INFO    20 00000011:80000005:00000000:00000009:
+2011.01.10 18:35:17 498 INFO    20 00
+2011.01.10 18:35:17 498 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=9,system_id= 
+2011.01.10 18:35:17 498 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:35:17 498 INFO    20  
+2011.01.10 18:35:17 498 INFO    22 Got response with seqno=9
+2011.01.10 18:35:17 500 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:35:17 536 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:35:17 537 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:35:17 537 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:35:18 587 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:35:18 587 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:18 587 INFO    20 00000010:00000015:00000000:4D2AFCF2:
+2011.01.10 18:35:18 587 INFO    20 
+2011.01.10 18:35:18 587 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662898
+2011.01.10 18:35:18 587 INFO    20  
+2011.01.10 18:35:18 587 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:35:18 587 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:18 587 INFO    20 00000010:80000015:00000000:4D2AFCF2:
+2011.01.10 18:35:18 587 INFO    20 
+2011.01.10 18:35:18 587 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662898
+2011.01.10 18:35:18 587 INFO    20  
+2011.01.10 18:35:20 569 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:35:28 604 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:35:28 604 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:28 604 INFO    20 00000010:00000015:00000000:4D2AFCF3:
+2011.01.10 18:35:28 604 INFO    20 
+2011.01.10 18:35:28 604 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662899
+2011.01.10 18:35:28 604 INFO    20  
+2011.01.10 18:35:28 604 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:35:28 604 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:28 605 INFO    20 00000010:80000015:00000000:4D2AFCF3:
+2011.01.10 18:35:28 605 INFO    20 
+2011.01.10 18:35:28 605 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662899
+2011.01.10 18:35:28 605 INFO    20  
+2011.01.10 18:35:38 624 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:35:38 624 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:38 624 INFO    20 00000010:00000015:00000000:4D2AFCF4:
+2011.01.10 18:35:38 624 INFO    20 
+2011.01.10 18:35:38 624 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662900
+2011.01.10 18:35:38 624 INFO    20  
+2011.01.10 18:35:38 624 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:35:38 624 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:38 624 INFO    20 00000010:80000015:00000000:4D2AFCF4:
+2011.01.10 18:35:38 624 INFO    20 
+2011.01.10 18:35:38 624 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662900
+2011.01.10 18:35:38 624 INFO    20  
+2011.01.10 18:35:40 503 INFO    21 HTTP request:/inject_mo?short_message=123&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:35:40 506 INFO    22 DELIVER_SM:
+2011.01.10 18:35:40 506 INFO    22 Hex dump (55) bytes:
+2011.01.10 18:35:40 506 INFO    22 00000037:00000005:00000000:0000000A:
+2011.01.10 18:35:40 506 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:35:40 506 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:35:40 506 INFO    22 06003100:320033
+2011.01.10 18:35:40 506 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=10,service_type=,source_addr_ton=1
+2011.01.10 18:35:40 506 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:35:40 506 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:35:40 506 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:35:40 506 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=6
+2011.01.10 18:35:40 506 INFO    22 short_message= 1 2 3
+2011.01.10 18:35:40 507 INFO    22  
+2011.01.10 18:35:40 508 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:35:40 512 INFO    22 Waiting for response with seqno=10
+2011.01.10 18:35:40 514 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:35:40 514 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:35:40 514 INFO    20 00000011:80000005:00000000:0000000A:
+2011.01.10 18:35:40 514 INFO    20 00
+2011.01.10 18:35:40 514 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=10,system_id= 
+2011.01.10 18:35:40 514 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:35:40 514 INFO    20  
+2011.01.10 18:35:40 514 INFO    22 Got response with seqno=10
+2011.01.10 18:35:40 514 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:35:40 539 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:35:40 575 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:35:40 576 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:35:43 585 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:35:48 649 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:35:48 649 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:48 649 INFO    20 00000010:00000015:00000000:4D2AFCF5:
+2011.01.10 18:35:48 649 INFO    20 
+2011.01.10 18:35:48 650 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294662901
+2011.01.10 18:35:48 650 INFO    20  
+2011.01.10 18:35:48 650 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:35:48 650 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:35:48 650 INFO    20 00000010:80000015:00000000:4D2AFCF5:
+2011.01.10 18:35:48 650 INFO    20 
+2011.01.10 18:35:48 650 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294662901
+2011.01.10 18:35:48 650 INFO    20  
+2011.01.10 18:35:52 205 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:35:52 206 INFO    20 null
+2011.01.10 18:35:52 206 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:35:54 948 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:36:54 948 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:37:15 225 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:37:15 225 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:37:15 230 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:37:15 230 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:37:15 230 INFO    20 0000002D:00000009:00000000:4D2AFD79:
+2011.01.10 18:37:15 230 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:37:15 230 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:37:15 230 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294663033,system_id=smppclient1
+2011.01.10 18:37:15 230 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:37:15 231 INFO    20 address_range=123
+2011.01.10 18:37:15 231 INFO    20  
+2011.01.10 18:37:15 231 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:37:15 231 INFO    20 Made RE for 123
+2011.01.10 18:37:15 231 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:37:15 231 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:37:15 231 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:37:15 231 INFO    20 00000018:80000009:00000000:4D2AFD79:
+2011.01.10 18:37:15 231 INFO    20 534D5050:53696D00:
+2011.01.10 18:37:15 231 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294663033,system_id=SMPPSim
+2011.01.10 18:37:15 231 INFO    20  
+2011.01.10 18:37:15 231 INFO    20 6 receivers connected and bound
+2011.01.10 18:37:15 232 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:37:22 481 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:37:22 481 INFO    20 null
+2011.01.10 18:37:22 481 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:37:39 119 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:37:39 119 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:37:39 122 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:37:39 122 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:37:39 122 INFO    20 0000002D:00000009:00000000:4D2AFD91:
+2011.01.10 18:37:39 122 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:37:39 122 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:37:39 122 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294663057,system_id=smppclient1
+2011.01.10 18:37:39 122 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:37:39 122 INFO    20 address_range=123
+2011.01.10 18:37:39 122 INFO    20  
+2011.01.10 18:37:39 122 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:37:39 123 INFO    20 Made RE for 123
+2011.01.10 18:37:39 123 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:37:39 123 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:37:39 123 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:37:39 123 INFO    20 00000018:80000009:00000000:4D2AFD91:
+2011.01.10 18:37:39 123 INFO    20 534D5050:53696D00:
+2011.01.10 18:37:39 123 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294663057,system_id=SMPPSim
+2011.01.10 18:37:39 123 INFO    20  
+2011.01.10 18:37:39 123 INFO    20 7 receivers connected and bound
+2011.01.10 18:37:39 124 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:37:42 86  INFO    21 HTTP request:/inject_mo?short_message=123&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=3&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:37:42 92  INFO    22 DELIVER_SM:
+2011.01.10 18:37:42 92  INFO    22 Hex dump (52) bytes:
+2011.01.10 18:37:42 92  INFO    22 00000034:00000005:00000000:0000000B:
+2011.01.10 18:37:42 92  INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:37:42 92  INFO    22 01013132:33340000:00000000:00000300:
+2011.01.10 18:37:42 92  INFO    22 03313233:
+2011.01.10 18:37:42 92  INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=11,service_type=,source_addr_ton=1
+2011.01.10 18:37:42 92  INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:37:42 92  INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:37:42 92  INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:37:42 92  INFO    22 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=3
+2011.01.10 18:37:42 92  INFO    22 short_message=123
+2011.01.10 18:37:42 92  INFO    22  
+2011.01.10 18:37:42 92  INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:37:42 96  INFO    22 Waiting for response with seqno=11
+2011.01.10 18:37:42 107 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:37:42 107 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:37:42 107 INFO    20 00000011:80000005:00000000:0000000B:
+2011.01.10 18:37:42 107 INFO    20 00
+2011.01.10 18:37:42 107 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=11,system_id= 
+2011.01.10 18:37:42 107 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:37:42 107 INFO    20  
+2011.01.10 18:37:42 108 INFO    22 Got response with seqno=11
+2011.01.10 18:37:42 108 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:37:42 137 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:37:42 138 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:37:42 139 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:37:45 169 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:37:49 145 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:37:49 146 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:37:49 146 INFO    20 00000010:00000015:00000000:4D2AFD92:
+2011.01.10 18:37:49 146 INFO    20 
+2011.01.10 18:37:49 146 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663058
+2011.01.10 18:37:49 146 INFO    20  
+2011.01.10 18:37:49 146 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:37:49 146 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:37:49 146 INFO    20 00000010:80000015:00000000:4D2AFD92:
+2011.01.10 18:37:49 146 INFO    20 
+2011.01.10 18:37:49 146 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663058
+2011.01.10 18:37:49 146 INFO    20  
+2011.01.10 18:37:54 607 INFO    21 HTTP request:/inject_mo?short_message=KAL&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=3&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:37:54 609 INFO    22 DELIVER_SM:
+2011.01.10 18:37:54 609 INFO    22 Hex dump (52) bytes:
+2011.01.10 18:37:54 609 INFO    22 00000034:00000005:00000000:0000000C:
+2011.01.10 18:37:54 610 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:37:54 610 INFO    22 01013132:33340000:00000000:00000300:
+2011.01.10 18:37:54 610 INFO    22 034B414C:
+2011.01.10 18:37:54 610 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=12,service_type=,source_addr_ton=1
+2011.01.10 18:37:54 610 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:37:54 610 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:37:54 610 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:37:54 610 INFO    22 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=3
+2011.01.10 18:37:54 610 INFO    22 short_message=KAL
+2011.01.10 18:37:54 610 INFO    22  
+2011.01.10 18:37:54 610 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:37:54 617 INFO    22 Waiting for response with seqno=12
+2011.01.10 18:37:54 622 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:37:54 622 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:37:54 622 INFO    20 00000011:80000005:00000000:0000000C:
+2011.01.10 18:37:54 622 INFO    20 00
+2011.01.10 18:37:54 622 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=12,system_id= 
+2011.01.10 18:37:54 623 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:37:54 623 INFO    20  
+2011.01.10 18:37:54 623 INFO    22 Got response with seqno=12
+2011.01.10 18:37:54 623 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:37:54 646 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:37:54 647 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:37:54 647 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:37:54 948 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:37:57 687 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:37:59 228 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:37:59 228 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:37:59 228 INFO    20 00000010:00000015:00000000:4D2AFD93:
+2011.01.10 18:37:59 228 INFO    20 
+2011.01.10 18:37:59 228 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663059
+2011.01.10 18:37:59 228 INFO    20  
+2011.01.10 18:37:59 228 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:37:59 229 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:37:59 229 INFO    20 00000010:80000015:00000000:4D2AFD93:
+2011.01.10 18:37:59 229 INFO    20 
+2011.01.10 18:37:59 229 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663059
+2011.01.10 18:37:59 229 INFO    20  
+2011.01.10 18:37:59 695 INFO    21 HTTP request:/inject_mo?short_message=%D0%96%D0%9E%D0%9F%D0%90&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=3&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:37:59 696 INFO    22 DELIVER_SM:
+2011.01.10 18:37:59 696 INFO    22 Hex dump (53) bytes:
+2011.01.10 18:37:59 696 INFO    22 00000035:00000005:00000000:0000000D:
+2011.01.10 18:37:59 697 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:37:59 697 INFO    22 01013132:33340000:00000000:00000300:
+2011.01.10 18:37:59 697 INFO    22 043F3F3F:3F
+2011.01.10 18:37:59 697 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=13,service_type=,source_addr_ton=1
+2011.01.10 18:37:59 697 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:37:59 697 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:37:59 697 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:37:59 697 INFO    22 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=4
+2011.01.10 18:37:59 697 INFO    22 short_message=????
+2011.01.10 18:37:59 697 INFO    22  
+2011.01.10 18:37:59 697 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:37:59 704 INFO    22 Waiting for response with seqno=13
+2011.01.10 18:37:59 705 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:37:59 705 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:37:59 705 INFO    20 00000011:80000005:00000000:0000000D:
+2011.01.10 18:37:59 705 INFO    20 00
+2011.01.10 18:37:59 705 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=13,system_id= 
+2011.01.10 18:37:59 705 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:37:59 705 INFO    20  
+2011.01.10 18:37:59 705 INFO    22 Got response with seqno=13
+2011.01.10 18:37:59 705 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:37:59 756 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:37:59 757 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:37:59 758 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:38:02 785 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:38:09 278 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:38:09 278 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:38:09 278 INFO    20 00000010:00000015:00000000:4D2AFD94:
+2011.01.10 18:38:09 279 INFO    20 
+2011.01.10 18:38:09 279 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663060
+2011.01.10 18:38:09 279 INFO    20  
+2011.01.10 18:38:09 279 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:38:09 279 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:38:09 279 INFO    20 00000010:80000015:00000000:4D2AFD94:
+2011.01.10 18:38:09 279 INFO    20 
+2011.01.10 18:38:09 279 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663060
+2011.01.10 18:38:09 279 INFO    20  
+2011.01.10 18:38:12 314 INFO    21 HTTP request:/inject_mo?short_message=%D0%96%D0%9E%D0%9F%D0%90&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=8&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:38:12 315 INFO    22 DELIVER_SM:
+2011.01.10 18:38:12 315 INFO    22 Hex dump (57) bytes:
+2011.01.10 18:38:12 315 INFO    22 00000039:00000005:00000000:0000000E:
+2011.01.10 18:38:12 315 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:38:12 315 INFO    22 01013132:33340000:00000000:00000800:
+2011.01.10 18:38:12 315 INFO    22 08041604:1E041F04:10
+2011.01.10 18:38:12 315 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=14,service_type=,source_addr_ton=1
+2011.01.10 18:38:12 315 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:38:12 316 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:38:12 316 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:38:12 316 INFO    22 replace_if_present_flag=0,data_coding=8,sm_default_msg_id=0,sm_length=8
+2011.01.10 18:38:12 316 INFO    22 short_message=
+2011.01.10 18:38:12 316 INFO    22  
+2011.01.10 18:38:12 316 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:38:12 319 INFO    22 Waiting for response with seqno=14
+2011.01.10 18:38:12 323 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:38:12 323 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:38:12 323 INFO    20 00000011:80000005:00000000:0000000E:
+2011.01.10 18:38:12 323 INFO    20 00
+2011.01.10 18:38:12 323 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=14,system_id= 
+2011.01.10 18:38:12 323 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:38:12 323 INFO    20  
+2011.01.10 18:38:12 325 INFO    22 Got response with seqno=14
+2011.01.10 18:38:12 325 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:38:12 345 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:38:12 347 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:38:12 348 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:38:15 387 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:38:19 281 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:38:19 282 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:38:19 282 INFO    20 00000010:00000015:00000000:4D2AFD95:
+2011.01.10 18:38:19 282 INFO    20 
+2011.01.10 18:38:19 282 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663061
+2011.01.10 18:38:19 282 INFO    20  
+2011.01.10 18:38:19 282 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:38:19 282 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:38:19 282 INFO    20 00000010:80000015:00000000:4D2AFD95:
+2011.01.10 18:38:19 282 INFO    20 
+2011.01.10 18:38:19 282 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663061
+2011.01.10 18:38:19 282 INFO    20  
+2011.01.10 18:38:29 10  WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:38:29 10  INFO    20 null
+2011.01.10 18:38:29 11  INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:38:54 953 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:38:55 270 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:38:55 270 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:38:55 273 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:38:55 273 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:38:55 273 INFO    20 0000002D:00000009:00000000:4D2AFDDD:
+2011.01.10 18:38:55 274 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:38:55 274 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:38:55 274 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294663133,system_id=smppclient1
+2011.01.10 18:38:55 274 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:38:55 274 INFO    20 address_range=123
+2011.01.10 18:38:55 274 INFO    20  
+2011.01.10 18:38:55 274 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:38:55 274 INFO    20 Made RE for 123
+2011.01.10 18:38:55 274 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:38:55 274 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:38:55 274 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:38:55 274 INFO    20 00000018:80000009:00000000:4D2AFDDD:
+2011.01.10 18:38:55 274 INFO    20 534D5050:53696D00:
+2011.01.10 18:38:55 274 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294663133,system_id=SMPPSim
+2011.01.10 18:38:55 274 INFO    20  
+2011.01.10 18:38:55 275 INFO    20 8 receivers connected and bound
+2011.01.10 18:38:55 275 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:39:00 101 INFO    21 HTTP request:/inject_mo?short_message=%D0%96%D0%9E%D0%9F%D0%90&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=6&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:39:00 129 INFO    22 DELIVER_SM:
+2011.01.10 18:39:00 129 INFO    22 Hex dump (53) bytes:
+2011.01.10 18:39:00 129 INFO    22 00000035:00000005:00000000:0000000F:
+2011.01.10 18:39:00 129 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:39:00 129 INFO    22 01013132:33340000:00000000:00000600:
+2011.01.10 18:39:00 129 INFO    22 04B6BEBF:B0
+2011.01.10 18:39:00 129 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=15,service_type=,source_addr_ton=1
+2011.01.10 18:39:00 129 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:39:00 129 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:39:00 129 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:39:00 129 INFO    22 replace_if_present_flag=0,data_coding=6,sm_default_msg_id=0,sm_length=4
+2011.01.10 18:39:00 129 INFO    22 short_message=����
+2011.01.10 18:39:00 130 INFO    22  
+2011.01.10 18:39:00 130 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:39:00 132 INFO    22 Waiting for response with seqno=15
+2011.01.10 18:39:00 149 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:39:00 149 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:39:00 149 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:39:00 156 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:39:00 156 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:39:00 156 INFO    20 00000011:80000005:00000000:0000000F:
+2011.01.10 18:39:00 157 INFO    20 00
+2011.01.10 18:39:00 157 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=15,system_id= 
+2011.01.10 18:39:00 157 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:39:00 157 INFO    20  
+2011.01.10 18:39:00 157 INFO    22 Got response with seqno=15
+2011.01.10 18:39:00 157 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:39:03 187 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:39:05 318 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:39:05 318 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:05 318 INFO    20 00000010:00000015:00000000:4D2AFDDE:
+2011.01.10 18:39:05 318 INFO    20 
+2011.01.10 18:39:05 318 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663134
+2011.01.10 18:39:05 318 INFO    20  
+2011.01.10 18:39:05 318 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:39:05 318 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:05 318 INFO    20 00000010:80000015:00000000:4D2AFDDE:
+2011.01.10 18:39:05 318 INFO    20 
+2011.01.10 18:39:05 318 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663134
+2011.01.10 18:39:05 318 INFO    20  
+2011.01.10 18:39:15 336 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:39:15 337 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:15 337 INFO    20 00000010:00000015:00000000:4D2AFDDF:
+2011.01.10 18:39:15 337 INFO    20 
+2011.01.10 18:39:15 337 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663135
+2011.01.10 18:39:15 337 INFO    20  
+2011.01.10 18:39:15 337 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:39:15 337 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:15 337 INFO    20 00000010:80000015:00000000:4D2AFDDF:
+2011.01.10 18:39:15 337 INFO    20 
+2011.01.10 18:39:15 337 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663135
+2011.01.10 18:39:15 337 INFO    20  
+2011.01.10 18:39:25 355 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:39:25 355 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:25 355 INFO    20 00000010:00000015:00000000:4D2AFDE0:
+2011.01.10 18:39:25 355 INFO    20 
+2011.01.10 18:39:25 355 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663136
+2011.01.10 18:39:25 355 INFO    20  
+2011.01.10 18:39:25 355 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:39:25 355 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:25 355 INFO    20 00000010:80000015:00000000:4D2AFDE0:
+2011.01.10 18:39:25 355 INFO    20 
+2011.01.10 18:39:25 355 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663136
+2011.01.10 18:39:25 355 INFO    20  
+2011.01.10 18:39:35 373 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:39:35 373 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:35 373 INFO    20 00000010:00000015:00000000:4D2AFDE1:
+2011.01.10 18:39:35 373 INFO    20 
+2011.01.10 18:39:35 373 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663137
+2011.01.10 18:39:35 373 INFO    20  
+2011.01.10 18:39:35 373 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:39:35 374 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:35 374 INFO    20 00000010:80000015:00000000:4D2AFDE1:
+2011.01.10 18:39:35 374 INFO    20 
+2011.01.10 18:39:35 374 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663137
+2011.01.10 18:39:35 374 INFO    20  
+2011.01.10 18:39:45 411 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:39:45 411 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:45 411 INFO    20 00000010:00000015:00000000:4D2AFDE2:
+2011.01.10 18:39:45 411 INFO    20 
+2011.01.10 18:39:45 412 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663138
+2011.01.10 18:39:45 412 INFO    20  
+2011.01.10 18:39:45 412 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:39:45 412 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:39:45 412 INFO    20 00000010:80000015:00000000:4D2AFDE2:
+2011.01.10 18:39:45 412 INFO    20 
+2011.01.10 18:39:45 412 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663138
+2011.01.10 18:39:45 412 INFO    20  
+2011.01.10 18:39:51 698 WARNING 20 packetLen[3] == -1, throwing EOFException
+2011.01.10 18:39:51 698 INFO    20 null
+2011.01.10 18:39:51 699 INFO    20 StandardConnectionHandler waiting for connection
+2011.01.10 18:39:54 953 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:40:39 834 INFO    20 StandardConnectionHandler accepted a connection
+2011.01.10 18:40:39 834 INFO    20 Protocol handler is of type StandardProtocolHandler
+2011.01.10 18:40:39 837 INFO    20 : BIND_TRANSCEIVER:
+2011.01.10 18:40:39 837 INFO    20 Hex dump (45) bytes:
+2011.01.10 18:40:39 837 INFO    20 0000002D:00000009:00000000:4D2AFE45:
+2011.01.10 18:40:39 837 INFO    20 736D7070:636C6965:6E743100:70617373:
+2011.01.10 18:40:39 837 INFO    20 776F7264:00003401:00313233:00
+2011.01.10 18:40:39 837 INFO    20 cmd_len=45,cmd_id=9,cmd_status=0,seq_no=1294663237,system_id=smppclient1
+2011.01.10 18:40:39 838 INFO    20 password=password,system_type=,interface_version=52,addr_ton=1,addr_npi=0
+2011.01.10 18:40:39 838 INFO    20 address_range=123
+2011.01.10 18:40:39 838 INFO    20  
+2011.01.10 18:40:39 838 INFO    20 StandardProtocolHandler: setting address range to 123
+2011.01.10 18:40:39 838 INFO    20 Made RE for 123
+2011.01.10 18:40:39 838 INFO    20 New transceiver session bound to SMPPSim
+2011.01.10 18:40:39 838 INFO    20 : BIND_TRANSCEIVER_RESP:
+2011.01.10 18:40:39 838 INFO    20 Hex dump (24) bytes:
+2011.01.10 18:40:39 838 INFO    20 00000018:80000009:00000000:4D2AFE45:
+2011.01.10 18:40:39 838 INFO    20 534D5050:53696D00:
+2011.01.10 18:40:39 838 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1294663237,system_id=SMPPSim
+2011.01.10 18:40:39 838 INFO    20  
+2011.01.10 18:40:39 838 INFO    20 9 receivers connected and bound
+2011.01.10 18:40:39 839 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:40:49 597 INFO    21 HTTP request:/inject_mo?short_message=%D0%96%D0%9E%D0%9F%D0%90+PIZDA&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=6&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:40:49 599 INFO    22 DELIVER_SM:
+2011.01.10 18:40:49 599 INFO    22 Hex dump (59) bytes:
+2011.01.10 18:40:49 599 INFO    22 0000003B:00000005:00000000:00000010:
+2011.01.10 18:40:49 599 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:40:49 599 INFO    22 01013132:33340000:00000000:00000600:
+2011.01.10 18:40:49 599 INFO    22 0AB6BEBF:B0205049:5A4441
+2011.01.10 18:40:49 599 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=16,service_type=,source_addr_ton=1
+2011.01.10 18:40:49 599 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:40:49 599 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:40:49 599 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:40:49 599 INFO    22 replace_if_present_flag=0,data_coding=6,sm_default_msg_id=0,sm_length=10
+2011.01.10 18:40:49 599 INFO    22 short_message=���� PIZDA
+2011.01.10 18:40:49 599 INFO    22  
+2011.01.10 18:40:49 599 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:40:49 607 INFO    22 Waiting for response with seqno=16
+2011.01.10 18:40:49 609 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:40:49 609 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:40:49 609 INFO    20 00000011:80000005:00000000:00000010:
+2011.01.10 18:40:49 609 INFO    20 00
+2011.01.10 18:40:49 609 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=16,system_id= 
+2011.01.10 18:40:49 609 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:40:49 609 INFO    20  
+2011.01.10 18:40:49 609 INFO    22 Got response with seqno=16
+2011.01.10 18:40:49 609 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:40:49 631 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:40:49 633 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:40:49 633 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:40:49 881 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:40:49 882 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:40:49 882 INFO    20 00000010:00000015:00000000:4D2AFE46:
+2011.01.10 18:40:49 882 INFO    20 
+2011.01.10 18:40:49 882 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663238
+2011.01.10 18:40:49 882 INFO    20  
+2011.01.10 18:40:49 882 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:40:49 882 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:40:49 882 INFO    20 00000010:80000015:00000000:4D2AFE46:
+2011.01.10 18:40:49 882 INFO    20 
+2011.01.10 18:40:49 882 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663238
+2011.01.10 18:40:49 882 INFO    20  
+2011.01.10 18:40:52 667 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:40:54 954 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:40:59 906 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:40:59 906 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:40:59 906 INFO    20 00000010:00000015:00000000:4D2AFE47:
+2011.01.10 18:40:59 906 INFO    20 
+2011.01.10 18:40:59 906 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663239
+2011.01.10 18:40:59 906 INFO    20  
+2011.01.10 18:40:59 906 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:40:59 906 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:40:59 906 INFO    20 00000010:80000015:00000000:4D2AFE47:
+2011.01.10 18:40:59 906 INFO    20 
+2011.01.10 18:40:59 906 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663239
+2011.01.10 18:40:59 906 INFO    20  
+2011.01.10 18:41:09 951 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:41:09 951 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:09 951 INFO    20 00000010:00000015:00000000:4D2AFE48:
+2011.01.10 18:41:09 952 INFO    20 
+2011.01.10 18:41:09 952 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663240
+2011.01.10 18:41:09 952 INFO    20  
+2011.01.10 18:41:09 952 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:41:09 952 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:09 952 INFO    20 00000010:80000015:00000000:4D2AFE48:
+2011.01.10 18:41:09 952 INFO    20 
+2011.01.10 18:41:09 952 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663240
+2011.01.10 18:41:09 952 INFO    20  
+2011.01.10 18:41:19 972 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:41:19 972 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:19 972 INFO    20 00000010:00000015:00000000:4D2AFE49:
+2011.01.10 18:41:19 972 INFO    20 
+2011.01.10 18:41:19 972 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663241
+2011.01.10 18:41:19 972 INFO    20  
+2011.01.10 18:41:19 972 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:41:19 972 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:19 972 INFO    20 00000010:80000015:00000000:4D2AFE49:
+2011.01.10 18:41:19 972 INFO    20 
+2011.01.10 18:41:19 972 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663241
+2011.01.10 18:41:19 972 INFO    20  
+2011.01.10 18:41:29 992 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:41:29 992 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:29 993 INFO    20 00000010:00000015:00000000:4D2AFE4A:
+2011.01.10 18:41:29 993 INFO    20 
+2011.01.10 18:41:29 993 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663242
+2011.01.10 18:41:29 993 INFO    20  
+2011.01.10 18:41:29 993 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:41:29 993 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:29 993 INFO    20 00000010:80000015:00000000:4D2AFE4A:
+2011.01.10 18:41:29 993 INFO    20 
+2011.01.10 18:41:29 993 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663242
+2011.01.10 18:41:29 993 INFO    20  
+2011.01.10 18:41:37 709 INFO    21 HTTP request:/inject_mo?short_message=%D0%96%D0%9E%D0%9F%D0%90+PIZDA&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=6&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:41:37 716 INFO    22 DELIVER_SM:
+2011.01.10 18:41:37 716 INFO    22 Hex dump (59) bytes:
+2011.01.10 18:41:37 716 INFO    22 0000003B:00000005:00000000:00000011:
+2011.01.10 18:41:37 717 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:41:37 717 INFO    22 01013132:33340000:00000000:00000600:
+2011.01.10 18:41:37 717 INFO    22 0AB6BEBF:B0205049:5A4441
+2011.01.10 18:41:37 717 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=17,service_type=,source_addr_ton=1
+2011.01.10 18:41:37 717 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:41:37 717 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:41:37 717 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:41:37 717 INFO    22 replace_if_present_flag=0,data_coding=6,sm_default_msg_id=0,sm_length=10
+2011.01.10 18:41:37 717 INFO    22 short_message=���� PIZDA
+2011.01.10 18:41:37 717 INFO    22  
+2011.01.10 18:41:37 717 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:41:37 717 INFO    22 Waiting for response with seqno=17
+2011.01.10 18:41:37 720 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:41:37 720 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:41:37 720 INFO    20 00000011:80000005:00000000:00000011:
+2011.01.10 18:41:37 720 INFO    20 00
+2011.01.10 18:41:37 721 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=17,system_id= 
+2011.01.10 18:41:37 721 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:41:37 721 INFO    20  
+2011.01.10 18:41:37 721 INFO    22 Got response with seqno=17
+2011.01.10 18:41:37 721 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:41:37 759 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:41:37 760 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:41:37 760 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:41:40 68  INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:41:40 68  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:40 68  INFO    20 00000010:00000015:00000000:4D2AFE4B:
+2011.01.10 18:41:40 68  INFO    20 
+2011.01.10 18:41:40 68  INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663243
+2011.01.10 18:41:40 68  INFO    20  
+2011.01.10 18:41:40 68  INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:41:40 68  INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:40 68  INFO    20 00000010:80000015:00000000:4D2AFE4B:
+2011.01.10 18:41:40 68  INFO    20 
+2011.01.10 18:41:40 68  INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663243
+2011.01.10 18:41:40 68  INFO    20  
+2011.01.10 18:41:40 789 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:41:43 519 INFO    21 HTTP request:/inject_mo?short_message=%D1%82%D1%80%D0%B8+%D0%BA%D0%BE%D0%B7%D1%8B&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=6&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:41:43 521 INFO    22 DELIVER_SM:
+2011.01.10 18:41:43 521 INFO    22 Hex dump (57) bytes:
+2011.01.10 18:41:43 521 INFO    22 00000039:00000005:00000000:00000012:
+2011.01.10 18:41:43 521 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:41:43 521 INFO    22 01013132:33340000:00000000:00000600:
+2011.01.10 18:41:43 521 INFO    22 08E2E0D8:20DADED7:EB
+2011.01.10 18:41:43 521 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=18,service_type=,source_addr_ton=1
+2011.01.10 18:41:43 521 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:41:43 521 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:41:43 521 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:41:43 522 INFO    22 replace_if_present_flag=0,data_coding=6,sm_default_msg_id=0,sm_length=8
+2011.01.10 18:41:43 522 INFO    22 short_message=��� ����
+2011.01.10 18:41:43 522 INFO    22  
+2011.01.10 18:41:43 522 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:41:43 525 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:41:43 525 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:41:43 525 INFO    20 00000011:80000005:00000000:00000012:
+2011.01.10 18:41:43 525 INFO    20 00
+2011.01.10 18:41:43 525 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=18,system_id= 
+2011.01.10 18:41:43 525 INFO    20  
+2011.01.10 18:41:43 526 INFO    22 Waiting for response with seqno=18
+2011.01.10 18:41:43 542 INFO    21 HTTP request:/css/style.css
+2011.01.10 18:41:43 545 INFO    21 HTTP request:/images/logo.gif
+2011.01.10 18:41:43 545 INFO    21 HTTP request:/images/dots.gif
+2011.01.10 18:41:46 564 INFO    21 HTTP request:/favicon.ico
+2011.01.10 18:41:48 526 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:41:50 114 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:41:50 114 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:50 114 INFO    20 00000010:00000015:00000000:4D2AFE4C:
+2011.01.10 18:41:50 114 INFO    20 
+2011.01.10 18:41:50 114 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663244
+2011.01.10 18:41:50 115 INFO    20  
+2011.01.10 18:41:50 115 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:41:50 115 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:41:50 115 INFO    20 00000010:80000015:00000000:4D2AFE4C:
+2011.01.10 18:41:50 115 INFO    20 
+2011.01.10 18:41:50 115 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663244
+2011.01.10 18:41:50 115 INFO    20  
+2011.01.10 18:41:54 954 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:42:00 132 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:00 132 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:00 132 INFO    20 00000010:00000015:00000000:4D2AFE4D:
+2011.01.10 18:42:00 132 INFO    20 
+2011.01.10 18:42:00 132 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663245
+2011.01.10 18:42:00 132 INFO    20  
+2011.01.10 18:42:00 132 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:00 132 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:00 132 INFO    20 00000010:80000015:00000000:4D2AFE4D:
+2011.01.10 18:42:00 132 INFO    20 
+2011.01.10 18:42:00 132 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663245
+2011.01.10 18:42:00 132 INFO    20  
+2011.01.10 18:42:10 150 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:10 150 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:10 150 INFO    20 00000010:00000015:00000000:4D2AFE4E:
+2011.01.10 18:42:10 150 INFO    20 
+2011.01.10 18:42:10 150 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663246
+2011.01.10 18:42:10 150 INFO    20  
+2011.01.10 18:42:10 150 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:10 150 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:10 150 INFO    20 00000010:80000015:00000000:4D2AFE4E:
+2011.01.10 18:42:10 150 INFO    20 
+2011.01.10 18:42:10 150 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663246
+2011.01.10 18:42:10 150 INFO    20  
+2011.01.10 18:42:20 174 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:20 174 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:20 174 INFO    20 00000010:00000015:00000000:4D2AFE4F:
+2011.01.10 18:42:20 174 INFO    20 
+2011.01.10 18:42:20 174 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663247
+2011.01.10 18:42:20 174 INFO    20  
+2011.01.10 18:42:20 174 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:20 174 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:20 174 INFO    20 00000010:80000015:00000000:4D2AFE4F:
+2011.01.10 18:42:20 174 INFO    20 
+2011.01.10 18:42:20 174 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663247
+2011.01.10 18:42:20 174 INFO    20  
+2011.01.10 18:42:30 223 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:30 223 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:30 223 INFO    20 00000010:00000015:00000000:4D2AFE50:
+2011.01.10 18:42:30 223 INFO    20 
+2011.01.10 18:42:30 223 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663248
+2011.01.10 18:42:30 223 INFO    20  
+2011.01.10 18:42:30 223 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:30 223 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:30 223 INFO    20 00000010:80000015:00000000:4D2AFE50:
+2011.01.10 18:42:30 223 INFO    20 
+2011.01.10 18:42:30 223 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663248
+2011.01.10 18:42:30 223 INFO    20  
+2011.01.10 18:42:40 267 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:40 267 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:40 267 INFO    20 00000010:00000015:00000000:4D2AFE51:
+2011.01.10 18:42:40 267 INFO    20 
+2011.01.10 18:42:40 267 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663249
+2011.01.10 18:42:40 267 INFO    20  
+2011.01.10 18:42:40 267 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:40 267 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:40 267 INFO    20 00000010:80000015:00000000:4D2AFE51:
+2011.01.10 18:42:40 267 INFO    20 
+2011.01.10 18:42:40 267 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663249
+2011.01.10 18:42:40 267 INFO    20  
+2011.01.10 18:42:50 352 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:42:50 352 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:50 352 INFO    20 00000010:00000015:00000000:4D2AFE52:
+2011.01.10 18:42:50 352 INFO    20 
+2011.01.10 18:42:50 352 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663250
+2011.01.10 18:42:50 352 INFO    20  
+2011.01.10 18:42:50 352 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:42:50 352 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:42:50 352 INFO    20 00000010:80000015:00000000:4D2AFE52:
+2011.01.10 18:42:50 352 INFO    20 
+2011.01.10 18:42:50 352 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663250
+2011.01.10 18:42:50 352 INFO    20  
+2011.01.10 18:42:54 954 INFO    24 Processing 0 messages in the delayed inbound queue
+2011.01.10 18:43:00 397 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:43:00 397 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:00 397 INFO    20 00000010:00000015:00000000:4D2AFE53:
+2011.01.10 18:43:00 397 INFO    20 
+2011.01.10 18:43:00 397 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663251
+2011.01.10 18:43:00 397 INFO    20  
+2011.01.10 18:43:00 397 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:43:00 397 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:00 397 INFO    20 00000010:80000015:00000000:4D2AFE53:
+2011.01.10 18:43:00 397 INFO    20 
+2011.01.10 18:43:00 397 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663251
+2011.01.10 18:43:00 397 INFO    20  
+2011.01.10 18:43:10 410 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:43:10 410 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:10 410 INFO    20 00000010:00000015:00000000:4D2AFE54:
+2011.01.10 18:43:10 410 INFO    20 
+2011.01.10 18:43:10 410 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663252
+2011.01.10 18:43:10 410 INFO    20  
+2011.01.10 18:43:10 410 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:43:10 410 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:10 410 INFO    20 00000010:80000015:00000000:4D2AFE54:
+2011.01.10 18:43:10 411 INFO    20 
+2011.01.10 18:43:10 411 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663252
+2011.01.10 18:43:10 411 INFO    20  
+2011.01.10 18:43:18 366 INFO    21 HTTP request:/inject_mo?short_message=%D1%82%D1%80%D0%B8+%D0%BA%D0%BE%D0%B7%D1%8B&source_addr=996555914478&destination_addr=1234&submit=Submit+Message&service_type=&source_addr_ton=1&source_addr_npi=1&dest_addr_ton=1&dest_addr_npi=1&esm_class=0&protocol_ID=&priority_flag=&registered_delivery_flag=0&data_coding=6&user_message_reference=&source_port=&destination_port=&sar_msg_ref_num=&sar_total_segments=&sar_segment_seqnum=&user_response_code=&privacy_indicator=&payload_type=&message_payload=&callback_num=&source_subaddress=&dest_subaddress=&language_indicator=&tlv1_tag=&tlv1_len=&tlv1_val=&tlv2_tag=&tlv2_len=&tlv2_val=&tlv3_tag=&tlv3_len=&tlv3_val=&tlv4_tag=&tlv4_len=&tlv4_val=&tlv5_tag=&tlv5_len=&tlv5_val=&tlv6_tag=&tlv6_len=&tlv6_val=&tlv7_tag=&tlv7_len=&tlv7_val=
+2011.01.10 18:43:18 368 INFO    22 DELIVER_SM:
+2011.01.10 18:43:18 370 INFO    22 Hex dump (57) bytes:
+2011.01.10 18:43:18 370 INFO    22 00000039:00000005:00000000:00000013:
+2011.01.10 18:43:18 370 INFO    22 00010139:39363535:35393134:34373800:
+2011.01.10 18:43:18 370 INFO    22 01013132:33340000:00000000:00000600:
+2011.01.10 18:43:18 370 INFO    22 08E2E0D8:20DADED7:EB
+2011.01.10 18:43:18 370 INFO    22 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=19,service_type=,source_addr_ton=1
+2011.01.10 18:43:18 370 INFO    22 source_addr_npi=1,source_addr=996555914478,dest_addr_ton=1,dest_addr_npi=1
+2011.01.10 18:43:18 370 INFO    22 destination_addr=1234,esm_class=0,protocol_ID=0,priority_flag=0
+2011.01.10 18:43:18 370 INFO    22 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2011.01.10 18:43:18 370 INFO    22 replace_if_present_flag=0,data_coding=6,sm_default_msg_id=0,sm_length=8
+2011.01.10 18:43:18 370 INFO    22 short_message=��� ����
+2011.01.10 18:43:18 370 INFO    22  
+2011.01.10 18:43:18 371 INFO    22 addressIsServicedByReceiver(1234)
+2011.01.10 18:43:18 376 INFO    22 Waiting for response with seqno=19
+2011.01.10 18:43:18 378 INFO    20 : DELIVER_SM_RESP:
+2011.01.10 18:43:18 378 INFO    20 Hex dump (17) bytes:
+2011.01.10 18:43:18 378 INFO    20 00000011:80000005:00000000:00000013:
+2011.01.10 18:43:18 378 INFO    20 00
+2011.01.10 18:43:18 378 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=19,system_id= 
+2011.01.10 18:43:18 378 INFO    20 DelayedInboundQueue: now contains 0 object(s)
+2011.01.10 18:43:18 379 INFO    20  
+2011.01.10 18:43:18 379 INFO    22 Got response with seqno=19
+2011.01.10 18:43:18 379 INFO    22 InboundQueue: empty  - waiting
+2011.01.10 18:43:20 462 INFO    20 : ENQUIRE_LINK:
+2011.01.10 18:43:20 462 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:20 462 INFO    20 00000010:00000015:00000000:4D2AFE55:
+2011.01.10 18:43:20 462 INFO    20 
+2011.01.10 18:43:20 462 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=1294663253
+2011.01.10 18:43:20 462 INFO    20  
+2011.01.10 18:43:20 462 INFO    20 :ENQUIRE_LINK_RESP:
+2011.01.10 18:43:20 463 INFO    20 Hex dump (16) bytes:
+2011.01.10 18:43:20 463 INFO    20 00000010:80000015:00000000:4D2AFE55:
+2011.01.10 18:43:20 463 INFO    20 
+2011.01.10 18:43:20 463 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=1294663253
+2011.01.10 18:43:20 463 INFO    20  
