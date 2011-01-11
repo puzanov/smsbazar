@@ -54,9 +54,6 @@ class SampleGateway
       sms_text = utf8.iconv(pdu.short_message)
     end
 
-    puts "sms text is:"
-    puts sms_text
-
     adv = Adv.new
     adv.phone = pdu.source_addr
     adv.content = sms_text
