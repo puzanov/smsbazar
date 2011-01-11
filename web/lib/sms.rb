@@ -42,18 +42,24 @@ class SampleGateway
 
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
-    #puts pdu.inspect
+    sms_text = pdu.short_message
 
-      #utf8 = Iconv.new("utf-8", "ISO-8859-1") 3
-      #utf8 = Iconv.new("UTF8", "ISO-8859-5") #6
-      utf8 = Iconv.new("UTF8", "UCS-2BE") #8
-      msg = utf8.iconv(pdu.short_message)
-      puts msg
-      #pdu.short_message = msg
+    if pdu.data_coding == 6
+      puts "data_coding = 6"
+      utf8 = Iconv.new("UTF8", "ISO-8859-5") #cyrillic
+      sms_text = utf8.iconv(pdu.short_message)
+    elsif pdu.data_coding == 8
+      puts "data_coding = 8"
+      utf8 = Iconv.new("UTF8", "UCS-2BE") # ucs big endian 
+      sms_text = utf8.iconv(pdu.short_message)
+    end
+
+    puts "sms text is:"
+    puts sms_text
 
     adv = Adv.new
     adv.phone = pdu.source_addr
-    adv.content = msg
+    adv.content = sms_text
     adv.save
   end
 
