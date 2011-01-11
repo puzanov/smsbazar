@@ -1,2 +1,2 @@
-*.log
+*.log.*
 smpptest/simulator/sim.*
