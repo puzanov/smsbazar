@@ -2,7 +2,7 @@ require "net/http"
 require "uri"
 require 'iconv'
 
-LOGFILE = File.dirname(__FILE__) + "/sms_gateway.log"
+LOGFILE = "/tmp/sms_gateway.log"
 Smpp::Base.logger = Logger.new(LOGFILE)
 
 class SampleGateway
@@ -43,6 +43,10 @@ class SampleGateway
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
     sms_text = pdu.short_message
+    
+    aFile = File.new("/tmp/pdu6", "w")
+    aFile.write(pdu.to_yaml)
+    aFile.close
 
     if pdu.data_coding == 6
       puts "data_coding = 6"
