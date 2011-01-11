@@ -1,2 +1,3 @@
 *.log.*
 smpptest/simulator/sim.*
+web/log/
