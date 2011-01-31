@@ -16,7 +16,7 @@ class MenuBrowser
   end  
 
   def get_advs parent_node
-    advs = Adv.first(:conditions => { :node_id => parent_node.id.to_s })
+    advs = Adv.find(:conditions => { :node_id => parent_node.id.to_s })
     return advs  
   end
 

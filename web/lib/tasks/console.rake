@@ -22,9 +22,10 @@ task :console => :environment do
     node = menu_browser.get_node node_id
     menu_item =  menu_browser.get_menu_by_item_number node, sms.to_i   
     if menu_item.node.leaf?
-      adv = menu_browser.get_advs menu_item.node
-      puts adv.content
-      puts adv.phone
+      advs = menu_browser.get_advs menu_item.node
+      advs.each do |adv|
+        puts "#{adv.content}. Телефон #{adv.phone}"
+      end
     else
       puts menu_item.menu_text_items
     end
