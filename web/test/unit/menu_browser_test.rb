@@ -1,6 +1,7 @@
 require 'test/unit'
 require 'rubygems'
 require 'test_helper'
+require 'mongoid'
 require 'mongoid/tree'
 require '../lib/menu_browser'
 

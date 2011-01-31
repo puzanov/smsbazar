@@ -1,17 +1,20 @@
+require 'rubygems'
+require 'dalli'
+
 class SmsSessionTracker
-  def get_node_id phone
-    return SmsSession.first(:conditions => { :phone => phone })
+  def get_session phone
+    m = Dalli::Client.new('localhost:11211')
+    session = m.get phone
+    return session
   end
-  def save_session phone, node_id
-    session = SmsSession.new
-    session.phone = phone
-    session.node_id = node_id
-    session.date_modified = 
-    session.save
+  
+  def save_session phone, session
+    m = Dalli::Client.new('localhost:11211')
+    m.set phone, session
   end
 end
 
 class SmsSession
-  filed :node_id, :type=>String
+  attr_accessor :node_id, :put_adv
 end
 

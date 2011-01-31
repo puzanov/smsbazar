@@ -1,8 +1,15 @@
+require 'mongoid'
+require 'mongoid/tree'
+
 class MenuBrowserPositionStatus
   attr_accessor :phone, :node_id, :is_price, :is_city
 end
 
 class MenuBrowser
+  def get_node node_id
+    return Tree.find(node_id)
+  end
+  
   def get_root
     node_id = Tree.root.id.to_s    
     return self.get_particular_menu node_id

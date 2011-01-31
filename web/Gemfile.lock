@@ -32,6 +32,7 @@ GEM
     bson (1.1.5)
     bson_ext (1.1.5)
     builder (2.1.2)
+    dalli (1.0.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
@@ -86,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext (= 1.1.5)
+  dalli
   memcache
   mongoid (= 2.0.0.beta.20)
   mongoid-tree
