@@ -41,6 +41,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    memcache (1.2.13)
     mime-types (1.16)
     mongo (1.1.5)
       bson (>= 1.1.5)
@@ -85,6 +86,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext (= 1.1.5)
+  memcache
   mongoid (= 2.0.0.beta.20)
   mongoid-tree
   rails (= 3.0.3)
