@@ -3,11 +3,11 @@ require 'rubygems'
 require 'test_helper'
 require 'mongoid'
 require 'mongoid/tree'
-require '../lib/menu_browser'
+require '../lib/menu_manager'
 
-class MenuBrowserTest < Test::Unit::TestCase 
+class MenuManagerTest < Test::Unit::TestCase 
   def test_get_item_from_root_menu
-    mb = MenuBrowser.new
+    mb = MenuManager.new
 
     menu_item = mb.get_root
     parent = menu_item.node    
