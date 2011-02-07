@@ -44,13 +44,9 @@ class SampleGateway
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
     
-    sc = SmsConverter.new
-    sms_text sc.get_converted_sms_text pdu
+    #sc = SmsConverter.new
+    #sms_text sc.get_converted_sms_text pdu
     
-    adv = Adv.new
-    adv.phone = pdu.source_addr
-    adv.content = sms_text
-    adv.save
   end
 
   def delivery_report_received(transceiver, pdu)
