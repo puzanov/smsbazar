@@ -1,1 +1,9 @@
 <h1>Категории</h1>
+<div style="font-size:24px;">
+<% @cats.menu_items.each do |cat| %>
+  <div style="width:200px;float:left;padding:10px;">
+    <a href="/cat/<%= cat.id %>"><%= cat.name %></a>
+  </div>
+<% end %>
+<div style="clear:both;"></div>
+</div>

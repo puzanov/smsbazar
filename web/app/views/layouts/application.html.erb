@@ -6,9 +6,11 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
-
-<%= yield %>
-
+<body style="background-image:url('/images/bg.gif')">
+  <center>     
+    <div style="text-align:left; width:800px; margin:auto 0; background-color:white; padding:20px;">
+      <%= yield %>
+    </div>
+  </center>  
 </body>
 </html>

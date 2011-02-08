@@ -36,6 +36,7 @@ class MenuManager
         i = 0
         n.children.each do |child|
           i += 1
+          menu_item.menu_items << child
           menu_item.menu_text_items << i.to_s + "-" + child.name
         end
         menu_item.node = n
@@ -62,9 +63,10 @@ class MenuManager
 end
 
 class MenuItem
-  attr_accessor :node, :menu_text_items, :is_leaf
+  attr_accessor :node, :menu_text_items, :is_leaf, :menu_items
 
   def initialize
+    @menu_items = Array.new
     @menu_text_items = Array.new
     @is_leaf = false
   end
