@@ -45,4 +45,5 @@ class HomeController < ApplicationController
     tree.destroy
     redirect_to :action => "index", :id => parent_id.to_s
   end
+
 end

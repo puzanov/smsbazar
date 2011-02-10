@@ -12,6 +12,7 @@ module Web
   class Application < Rails::Application
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
     #config.mongoid.logger = Logger.new($stdout, :warn)
   end
 end

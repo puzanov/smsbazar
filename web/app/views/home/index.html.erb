@@ -1,4 +1,15 @@
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#current_node_name").editInPlace({
+    url: "/edit_category",
+    params: "name=david"
+  });
+});
+</script>
+
 <div style="font-size:24px;">
+
   <% if @current_node.present? %>
     <div class="bread_crumps" style="font-size:12px;padding-bottom:10px;">
       <% @bread_crumps.each do |crump| %>
@@ -7,7 +18,7 @@
     </div>
     <div style="color:#62A9AF; padding-bottom:15px;">
       <% parent_id = @current_node.id %>
-      <%= @current_node.name %>
+      <span id="current_node_name"><%= @current_node.name %></span>
       <span style="display:inline-block;vertical-align:text-top;">
         <a href="/delete_category/<%= @current_node.id %> " style="color:red;font-size:11px;">удалить</a>
       </span>
