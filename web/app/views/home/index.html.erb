@@ -1,9 +1,16 @@
 <div style="font-size:24px;">
-  <%= @parent_id %>
   <% if @current_node.present? %>
+    <div class="bread_crumps" style="font-size:12px;padding-bottom:10px;">
+      <% @bread_crumps.each do |crump| %>
+        &#8592;&nbsp;<a href="/cat/<%= crump.id %>"><%=crump.name%></a>
+      <% end %>
+    </div>
     <div style="color:#62A9AF; padding-bottom:15px;">
       <% parent_id = @current_node.id %>
       <%= @current_node.name %>
+      <span style="display:inline-block;vertical-align:text-top;">
+        <a href="/delete_category/<%= @current_node.id %> " style="color:red;font-size:11px;">удалить</a>
+      </span>
     </div>
   <% end %>
   <% @cats.menu_items.each do |cat| %>

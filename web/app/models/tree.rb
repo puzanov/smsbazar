@@ -5,4 +5,5 @@ class Tree
   include Mongoid::Tree::Traversal
   field :name, :type => String
   field :tags, :type => Hash
+  before_destroy :destroy_children
 end
