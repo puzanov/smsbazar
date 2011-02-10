@@ -1,4 +1,5 @@
 class Tree
+  require 'mongoid/tree'
   include Mongoid::Document
   include Mongoid::Tree
   include Mongoid::Tree::Traversal

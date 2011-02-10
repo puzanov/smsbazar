@@ -1,4 +1,6 @@
 require 'menu_manager'
+require 'rubygems'
+require 'mongoid/tree'
 
 class HomeController < ApplicationController
   attr_accessor :menu_manager
@@ -9,8 +11,25 @@ class HomeController < ApplicationController
     if id.present?
       node_id = id
     else
+      if Tree.root.nil?
+        Tree.new(:name => "root").save
+      end
       node_id = Tree.root.id.to_s      
     end
+    @current_node = @menu_manager.get_node(node_id)
     @cats = @menu_manager.get_particular_menu node_id
+  end
+
+  def add_category
+    parent_id = params[:parent_id]
+    name = params[:name]
+    if parent_id == ""
+      parent_id = Tree.root.id.to_s
+    end
+    tree = Tree.new
+    tree.name = name
+    tree.parent_id = parent_id
+    tree.save
+    redirect_to :back
   end
 end
