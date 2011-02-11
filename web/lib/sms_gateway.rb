@@ -82,14 +82,9 @@ class SampleGateway
      :sm_default_msg_id => 0
     }
 
-    puts pdu.inspect
-
     sc = SmsConverter.new
     sms_to_send = sc.convert_text(data, pdu)
-    puts data
-    puts pdu.data_coding
-    puts sms_to_send
-    SampleGateway.send_mt("1172", "996700527133", sms_to_send, config)    
+    SampleGateway.send_mt("1172", phone, sms_to_send, config)    
 
   end
 
