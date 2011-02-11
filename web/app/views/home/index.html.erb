@@ -2,8 +2,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $("#current_node_name").editInPlace({
-    url: "/edit_category",
-    params: "name=david"
+    url: "/edit_category/<%= @current_node.id %>",
   });
 });
 </script>
@@ -31,7 +30,7 @@ $(document).ready(function() {
   <% end %>
   <div style="clear:both;"></div>
   
-  <div class="category_form" style="padding-top:45px;">
+  <div class="category_form" style="padding-top:45px;width:300px;float:left;">
     <div>Создать раздел</div>
     <form method="post" action="/add_category">
       <input type="hidden" name="parent_id" value="<%= @current_node.id %>" /> 
@@ -41,4 +40,17 @@ $(document).ready(function() {
     </form>
   </div>
 
+  <% if @current_node.leaf? %>
+  <div class="category_form" style="margin-left:50px;padding-top:45px;width:400px;float:left;">
+    <div>Разместить объявление</div>
+    <form method="post" action="/add_adv">
+      <input type="hidden" name="parent_id" value="<%= @current_node.id %>" /> 
+      <div style="padding:5px;">
+        <input type="text" name="adv_content" style="width:300px;" />&nbsp;<input type="submit" value="OK" /> 
+      </div>
+    </form>
+  </div>
+  <% end %>
+
+  <div style="clear:both;"></div>
 </div>

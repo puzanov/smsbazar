@@ -46,4 +46,15 @@ class HomeController < ApplicationController
     redirect_to :action => "index", :id => parent_id.to_s
   end
 
+  def edit_category
+    id = params[:id]
+    name = params[:update_value]
+   
+    @node = Tree.find(id)
+    @node.name = name
+    @node.save
+
+    render :text => name
+  end
+
 end
