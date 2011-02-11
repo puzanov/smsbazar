@@ -16,6 +16,7 @@ class HomeController < ApplicationController
       end
       node_id = Tree.root.id.to_s      
     end
+
     @bread_crumps = Array.new
     @current_node = @menu_manager.get_node(node_id)
     @current_node.parent_ids.each do |parent_id|
@@ -23,6 +24,11 @@ class HomeController < ApplicationController
       @bread_crumps << n
     end
     @cats = @menu_manager.get_particular_menu node_id
+
+    if @current_node.leaf?
+      @advs = @menu_manager.get_advs @current_node
+    end
+
   end
 
   def add_category
@@ -55,6 +61,18 @@ class HomeController < ApplicationController
     @node.save
 
     render :text => name
+  end
+
+  def add_adv
+    node_id = params[:parent_id]
+    content = params[:content]
+
+    adv = Adv.new
+    adv.node_id = node_id
+    adv.content = content
+    adv.save
+    
+    redirect_to :back
   end
 
 end
