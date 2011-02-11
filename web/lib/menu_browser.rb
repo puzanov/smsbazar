@@ -1,6 +1,10 @@
 class MenuBrowser
   attr_accessor :menu_manager, :io, :session_tracker
   def process_action phone, message, pdu
+    if message == "0"
+      @session_tracker.delete_session(phone)
+    end
+    
     session = @session_tracker.get_session phone.to_s
     if session == nil
       menu_item = @menu_manager.get_root

@@ -12,6 +12,11 @@ class SmsSessionTracker
     m = Dalli::Client.new('localhost:11211')
     m.set phone, session
   end
+
+  def delete_session phone
+    m = Dalli::Client.new('localhost:11211')
+    m.delete phone
+  end
 end
 
 class SmsSession

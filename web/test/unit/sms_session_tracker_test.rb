@@ -11,4 +11,16 @@ class SmsSessionTrackerTest < Test::Unit::TestCase
     session = session_tracker.get_session phone
     assert_equal "node", session.node_id
   end
+
+  def test_delete_session
+    phone = "123"
+
+    session_tracker = SmsSessionTracker.new
+    session_tracker.save_session(phone, "test")
+    session_tracker.delete_session phone
+    session = session_tracker.get_session(phone)
+
+    puts session
+
+  end
 end
