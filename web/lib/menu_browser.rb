@@ -7,8 +7,16 @@ class MenuBrowser
     
     session = @session_tracker.get_session phone.to_s
     if session == nil
+      items = Array.new
+      items << "1 - Купить"
+      items << "2 - Продать"
+      @io.send(phone, menu_item.menu_text_items, pdu)
+      sms_session = SmsSession.new
+      @session_tracker.save_session(phone, sms_session) # empty session
+      return
+
       menu_item = @menu_manager.get_root
-      @io.send(menu_item.menu_text_items, pdu)
+      @io.send(phone, menu_item.menu_text_items, pdu)
     else
       node_id = session.node_id
       node = @menu_manager.get_node node_id
@@ -16,10 +24,10 @@ class MenuBrowser
       if menu_item.node.leaf?
         advs = @menu_manager.get_advs menu_item.node
         advs.each do |adv|
-          @io.send("#{adv.content}. Телефон #{adv.phone}", pdu)
+          @io.send(phone, "#{adv.content}. Телефон #{adv.phone}", pdu)
         end
       else
-        @io.send(menu_item.menu_text_items, pdu)
+        @io.send(phone, menu_item.menu_text_items, pdu)
       end
     end
     sms_session = SmsSession.new

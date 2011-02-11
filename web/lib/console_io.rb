@@ -1,5 +1,5 @@
 class ConsoleIO
-  def send data
+  def send phone, data, pdu
     puts data
   end
 end

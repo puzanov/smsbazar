@@ -62,7 +62,7 @@ class SampleGateway
     end
   end
 
-  def send data, pdu
+  def send phone, data, pdu
     data = data.join("\n") if data.class == Array
 
     config = {
