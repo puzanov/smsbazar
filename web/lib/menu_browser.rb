@@ -1,10 +1,10 @@
 class MenuBrowser
   attr_accessor :menu_manager, :io, :session_tracker
-  def process_action phone, message
+  def process_action phone, message, pdu
     session = @session_tracker.get_session phone.to_s
     if session == nil
       menu_item = @menu_manager.get_root
-      @io.print menu_item.menu_text_items
+      @io.send(menu_item.menu_text_items, pdu)
     else
       node_id = session.node_id
       node = @menu_manager.get_node node_id
@@ -12,10 +12,10 @@ class MenuBrowser
       if menu_item.node.leaf?
         advs = @menu_manager.get_advs menu_item.node
         advs.each do |adv|
-          @io.print "#{adv.content}. Телефон #{adv.phone}"
+          @io.send("#{adv.content}. Телефон #{adv.phone}", pdu)
         end
       else
-        @io.print menu_item.menu_text_items
+        @io.send(menu_item.menu_text_items, pdu)
       end
     end
     sms_session = SmsSession.new

@@ -1,5 +1,5 @@
 class ConsoleIO
-  def print data
+  def send data
     puts data
   end
 end

@@ -2,6 +2,10 @@ require "net/http"
 require "uri"
 require 'iconv'
 require 'sms_converter'
+require "sms_session_tracker"
+require "menu_manager"
+require "menu_browser"
+require "sms_io"
 
 LOGFILE = "/tmp/sms_gateway.log"
 Smpp::Base.logger = Logger.new(LOGFILE)
@@ -43,10 +47,50 @@ class SampleGateway
 
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
-    
-    #sc = SmsConverter.new
-    #sms_text sc.get_converted_sms_text pdu
-    
+    sc = SmsConverter.new
+    sms_text = sc.get_converted_sms_text pdu
+
+    begin
+      @menu_browser = MenuBrowser.new
+      @menu_browser.menu_manager = MenuManager.new
+      @menu_browser.io = self
+      @menu_browser.session_tracker = SmsSessionTracker.new
+      @menu_browser.process_action(pdu.source_addr, sms_text, pdu)
+    rescue => exception
+      puts $!
+      puts exception.backtrace
+    end
+  end
+
+  def send data, pdu
+    data = data.join("\n") if data.class == Array
+
+    config = {
+     :service_type => 1,
+     :source_addr_ton => 2,
+     :source_addr_npi => 1,
+     :dest_addr_ton => 1,
+     :dest_addr_npi => 1,
+     :esm_class => 3 ,
+     :protocol_id => 0,
+     :priority_flag => 0,
+     :schedule_delivery_time => nil,
+     :validity_period => nil,
+     :registered_delivery=> 1,
+     :replace_if_present_flag => 0,
+     :data_coding => 8,
+     :sm_default_msg_id => 0
+    }
+
+    puts pdu.inspect
+
+    sc = SmsConverter.new
+    sms_to_send = sc.convert_text(data, pdu)
+    puts data
+    puts pdu.data_coding
+    puts sms_to_send
+    SampleGateway.send_mt("1172", "996700527133", sms_to_send, config)    
+
   end
 
   def delivery_report_received(transceiver, pdu)
@@ -58,6 +102,7 @@ class SampleGateway
   end
 
   def message_rejected(transceiver, mt_message_id, pdu)
+    puts pdu.inspect
     puts "Delegate: message_rejected: id #{mt_message_id} smsc ref id: #{pdu.message_id}"
   end
 
