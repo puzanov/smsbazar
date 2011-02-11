@@ -64,7 +64,7 @@ class HomeController < ApplicationController
   end
 
   def add_adv
-    node_id = params[:parent_id]
+    node_id = params[:node_id]
     content = params[:content]
 
     adv = Adv.new

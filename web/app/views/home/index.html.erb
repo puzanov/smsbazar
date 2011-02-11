@@ -23,6 +23,7 @@ $(document).ready(function() {
       </span>
     </div>
   <% end %>
+  
   <% @cats.menu_items.each do |cat| %>
     <div style="width:200px;float:left;padding:10px;">
       <a href="/cat/<%= cat.id %>"><%= cat.name %></a>
@@ -30,6 +31,16 @@ $(document).ready(function() {
   <% end %>
   <div style="clear:both;"></div>
   
+  <% if @current_node.leaf? %>
+    <div class="advs">
+      <% @advs.each do |adv| %>
+        <div>
+          <%= adv.content %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+    
   <div class="category_form" style="padding-top:45px;width:300px;float:left;">
     <div>Создать раздел</div>
     <form method="post" action="/add_category">
@@ -44,9 +55,9 @@ $(document).ready(function() {
   <div class="category_form" style="margin-left:50px;padding-top:45px;width:400px;float:left;">
     <div>Разместить объявление</div>
     <form method="post" action="/add_adv">
-      <input type="hidden" name="parent_id" value="<%= @current_node.id %>" /> 
+      <input type="hidden" name="node_id" value="<%= @current_node.id %>" /> 
       <div style="padding:5px;">
-        <input type="text" name="adv_content" style="width:300px;" />&nbsp;<input type="submit" value="OK" /> 
+        <input type="text" name="content" style="width:300px;" />&nbsp;<input type="submit" value="OK" /> 
       </div>
     </form>
   </div>
