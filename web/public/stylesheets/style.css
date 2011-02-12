@@ -1,0 +1,24 @@
+body {
+  background-image:url('/images/bg.png');
+  padding:0;
+  margin:0;
+}
+
+#top_info {
+  text-align:left;
+  padding-top:35px;
+  width:850px;
+  font-size:30px;
+  position:absolute;
+  color:white;
+  z-index:10;
+  left:50%;
+  margin-left:-425px;
+}
+
+#top_black_box {
+  background-color:black;
+  height:100px;
+  margin-bottom:35px;
+  opacity:0.7;
+}
