@@ -1,9 +1,10 @@
-
 <script type="text/javascript">
 $(document).ready(function() {
-  $("#current_node_name").editInPlace({
-    url: "/edit_category/<%= @current_node.id %>",
-  });
+  <% unless @current_node.root? %>
+    $("#current_node_name").editInPlace({
+      url: "/edit_category/<%= @current_node.id %>",
+    });
+  <% end %>
 });
 </script>
 
@@ -50,18 +51,6 @@ $(document).ready(function() {
       </div>
     </form>
   </div>
-
-  <% if @current_node.leaf? %>
-  <div class="category_form" style="margin-left:50px;padding-top:45px;width:400px;float:left;">
-    <div>Разместить объявление</div>
-    <form method="post" action="/add_adv">
-      <input type="hidden" name="node_id" value="<%= @current_node.id %>" /> 
-      <div style="padding:5px;">
-        <input type="text" name="content" style="width:300px;" />&nbsp;<input type="submit" value="OK" /> 
-      </div>
-    </form>
-  </div>
-  <% end %>
 
   <div style="clear:both;"></div>
 </div>
