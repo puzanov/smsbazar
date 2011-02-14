@@ -13,15 +13,22 @@ $(document).ready(function() {
   <% if @current_node.present? %>
     <div class="bread_crumps" style="font-size:12px;padding-bottom:10px;">
       <% @bread_crumps.each do |crump| %>
+        <% if crump.name == "root" %>
+          <% crump.name = "Каталог" %>
+        <% end %>
         &#8592;&nbsp;<a href="/cat/<%= crump.id %>"><%=crump.name%></a>
       <% end %>
     </div>
     <div style="color:#62A9AF; padding-bottom:15px;">
-      <% parent_id = @current_node.id %>
+      <% if @current_node.root? %>
+        <% @current_node.name = "Каталог" %>
+      <% end %>
       <span id="current_node_name"><%= @current_node.name %></span>
-      <span style="display:inline-block;vertical-align:text-top;">
-        <a href="/delete_category/<%= @current_node.id %> " style="color:red;font-size:11px;">удалить</a>
-      </span>
+      <% unless @current_node.root? %>
+        <span style="display:inline-block;vertical-align:text-top;">
+          <a href="/delete_category/<%= @current_node.id %> " style="color:red;font-size:11px;">удалить</a>
+        </span>
+      <% end %>
     </div>
   <% end %>
   
