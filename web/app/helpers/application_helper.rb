@@ -6,4 +6,16 @@ module ApplicationHelper
       return "0-#{matches[1]}-#{matches[2]}"
     end
   end
+
+  def get_crumps node_id
+    crumps = Array.new
+    current_node = Tree.find node_id
+    parents = current_node.parent_ids
+    parents.each do |node_id|
+      node = Tree.find node_id
+      crumps << node  
+    end
+    crumps << current_node
+    return crumps
+  end
 end
