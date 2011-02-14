@@ -2,7 +2,7 @@
   <% @advs.each do |adv| %>
     <div style="padding-bottom:30px;">
       <div><%= adv.content %></div>
-      <span><%= adv.phone %></span> <span><%= adv.city %></span>
+      <span><%= format_phone_number(adv.phone) %></span> <span><%= adv.city %></span>
       <span>
         <a href="/advs/delete/<%= adv.id %>" style="color:red;font-size:11px;">удалить</a>
       </span>
