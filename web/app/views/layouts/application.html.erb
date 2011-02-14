@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SMS Базары</title>
+  <title>SMS Базар</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag "jquery.editinplace" %>
@@ -9,8 +9,14 @@
 </head>
 <body>
   <center>  
+
   <div id="top_info">
-    <span>SMS Базары</span>
+    <div style="float:left;font-family:MuseoCustom,sans-serif;">SMS Базар</div>
+    <div style="float:right;font-size:14px;">
+      <a href="#" style="color:white;margin-right:10px;">Все объявления</a>
+      <a href="#" style="color:white;">Выбор редакции</a>
+    </div>
+    <div style="clear:both;"></div>
   </div>
   
   <div id="top_black_box">
@@ -19,6 +25,16 @@
   <div id="main_content_box">
     <%= yield %>
   </div>
+
+  <div style="width:850px;margin-top:30px;">
+    <div style="width:350px;float:left;border:6px solid #5F6972;padding:20px;background-color:white;">
+      <a href="#">Что это такое?</a>  
+    </div>
+    <div style="width:350px;float:right;border:6px solid #5F6972;padding:20px;background-color:white;">
+      <a href="#">Разместить объявление</a>  
+    </div>
+  </div>
+
   </center>
 </body>
 </html>
