@@ -46,7 +46,9 @@ class MenuBrowser
             adv.phone = phone
             adv.content = message
             adv.node_id = session.node_id
+            adv.ctime = Time.new.to_i
             adv.save
+
             @io.send(phone, "Спасибо! Ваше объявление сохранено и доступно для поиска", pdu)
             @session_tracker.delete_session phone
           else

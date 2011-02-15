@@ -1,6 +1,6 @@
 class AdvsController < ApplicationController
   def index
-    @advs = Adv.find :all    
+    @advs = Adv.find(:all).desc(:ctime)   
   end
 
   def delete

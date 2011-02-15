@@ -5,4 +5,5 @@ class Adv
   field :node_id, :type => String
   field :city, :type => String
   field :price, :type => Integer
+  field :ctime, :type => Integer
 end

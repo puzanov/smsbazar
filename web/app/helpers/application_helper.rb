@@ -9,7 +9,13 @@ module ApplicationHelper
 
   def get_crumps node_id
     crumps = Array.new
-    current_node = Tree.find node_id
+
+    begin
+      current_node = Tree.find node_id
+    rescue
+      return crumps
+    end
+
     parents = current_node.parent_ids
     parents.each do |node_id|
       node = Tree.find node_id
