@@ -12,4 +12,6 @@ Web::Application.routes.draw do
 
   match "/advs" => "advs#index"
   match "/advs/delete/:id" => "advs#delete"
+
+  match "/help" => "help#index"
 end
