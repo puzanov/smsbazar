@@ -1,25 +1,8 @@
-<div class="content" stype="line-spacing:10px;">
+<div class="content">
   <% @advs.each do |adv| %>
     <div style="padding-bottom:30px;">
-      
-      <div class="bread_crumps" style="font-size:12px;">
-        <% crumps = get_crumps(adv.node_id) %>
-        <% crumps.each do |crump| %>
-          <% if crump.name == "root" %>
-            <% crump.name = "Каталог" %>
-          <% end %>
-          &#8592;&nbsp;<a href="/cat/<%= crump.id %>"><%=crump.name%></a>
-        <% end %>
-      </div>
-      <div><%= adv.content %></div>
-      <span><%= format_phone_number(adv.phone) %></span> <span><%= adv.city %></span>
-
-      <% if params[:admin] %>
-        <span>
-          <a href="/advs/delete/<%= adv.id %>" style="color:red;font-size:11px;">удалить</a>
-        </span>
-      <% end %>
-
+      <%= render :partial => "shared/crumps", :locals => {:node_id => adv.node_id} %>
+      <%= render :partial => "shared/adv", :locals => {:adv => adv} %>
     </div>
   <% end %>
 </div>

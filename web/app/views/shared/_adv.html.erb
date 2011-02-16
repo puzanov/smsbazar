@@ -1,0 +1,9 @@
+<div><%= adv.content %></div>
+<span><%= format_phone_number(adv.phone) %></span> <span><%= adv.city %></span>
+
+<% if params[:admin] %>
+  <span>
+    <a href="/advs/delete/<%= adv.id %>" style="color:red;font-size:11px;">удалить</a>
+  </span>
+<% end %>
+
