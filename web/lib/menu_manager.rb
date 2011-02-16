@@ -17,6 +17,11 @@ class MenuManager
     return advs
   end
 
+  def get_one_adv parent_node, position
+    advs = Adv.where(:node_id => parent_node.id.to_s).desc("ctime").skip(position).limit(1)
+    return advs
+  end
+
   def get_menu_by_item_number node, item_number
     if node.leaf?
       menu_item = MenuItem.new

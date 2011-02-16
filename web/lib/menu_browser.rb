@@ -33,10 +33,18 @@ class MenuBrowser
       if menu_item.node.leaf?
         
         if session.browse_type == "1"
-          advs = @menu_manager.get_advs menu_item.node
+          session.adv_position = 0 if session.adv_position.nil?
+          advs = @menu_manager.get_one_adv(menu_item.node, session.adv_position)
+          adv_exists = 0
           advs.each do |adv|
+            adv_exists = 1
             @io.send(phone, "#{adv.content}. Телефон #{adv.phone}", pdu)
           end
+          session.adv_position = session.adv_position+1
+          if adv_exists == 0
+            @io.send(phone, "Объявлений нет. Пошлите 0 и вернетесь в начало", pdu)
+          end
+          
         else
           if session.put_adv
             
