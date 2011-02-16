@@ -30,7 +30,6 @@ class MenuBrowser
       node_id = session.node_id
       node = @menu_manager.get_node node_id
       menu_item = @menu_manager.get_menu_by_item_number node, message.to_i
-      puts menu_item.node.inspect
       if menu_item.node.leaf?
         
         if session.browse_type == "1"
@@ -40,7 +39,6 @@ class MenuBrowser
           end
         else
           if session.put_adv
-            puts "put adv"
             
             adv = Adv.new
             adv.phone = phone

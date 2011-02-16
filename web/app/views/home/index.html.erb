@@ -12,14 +12,11 @@
 <div class="content">
 
   <% if @current_node.present? %>
-    <div class="bread_crumps" style="font-size:12px;padding-bottom:10px;">
-      <% @bread_crumps.each do |crump| %>
-        <% if crump.name == "root" %>
-          <% crump.name = "Каталог" %>
-        <% end %>
-        &#8592;&nbsp;<a href="/cat/<%= crump.id %>"><%=crump.name%></a>
-      <% end %>
+    
+    <div style="padding-bottom:15px;">
+      <%= render :partial => "shared/crumps", :locals => {:node_id => @current_node.id} %>
     </div>
+
     <div style="color:#62A9AF; padding-bottom:15px;">
       <% if @current_node.root? %>
         <% @current_node.name = "Каталог" %>
@@ -47,8 +44,8 @@
   <% if @current_node.leaf? %>
     <div class="advs">
       <% @advs.each do |adv| %>
-        <div>
-          <%= adv.content %>
+        <div style="padding-bottom:10px;">
+          <%= render :partial => "shared/adv", :locals => {:adv => adv} %>  
         </div>
       <% end %>
     </div>

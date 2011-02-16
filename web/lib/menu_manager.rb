@@ -13,8 +13,8 @@ class MenuManager
   end  
 
   def get_advs parent_node
-    advs = Adv.find(:conditions => { :node_id => parent_node.id.to_s })
-    return advs  
+    advs = Adv.find(:conditions => { :node_id => parent_node.id.to_s }).desc("ctime")
+    return advs
   end
 
   def get_menu_by_item_number node, item_number

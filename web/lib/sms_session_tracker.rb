@@ -20,6 +20,6 @@ class SmsSessionTracker
 end
 
 class SmsSession
-  attr_accessor :node_id, :browse_type, :put_adv
+  attr_accessor :node_id, :browse_type, :put_adv, :last_adv
 end
 

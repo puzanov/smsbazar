@@ -17,5 +17,5 @@ task :console => :environment do
   print "Enter your sms message "
   sms = STDIN.gets.chomp
 
-  @menu_browser.process_action phone, sms
+  @menu_browser.process_action phone, sms, nil
 end
