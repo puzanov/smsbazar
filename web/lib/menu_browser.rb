@@ -1,4 +1,6 @@
 class MenuBrowser
+  require 'iconv'
+
   attr_accessor :menu_manager, :io, :session_tracker
   
   def process_action(phone, message, pdu)
@@ -74,11 +76,16 @@ class MenuBrowser
     end
   end
 
+  def ensure_utf8 message
+    ic = Iconv.new('UTF-8//IGNORE', 'UTF-8')
+    return ic.iconv message
+  end
+  
   def save_adv(phone, message, node_id)
     adv = Adv.new
     adv.phone = phone
-    adv.content = message
-    adv.node_id = session.node_id
+    adv.content = self.ensure_utf8 message
+    adv.node_id = node_id
     adv.ctime = Time.new.to_i
     adv.save
   end
