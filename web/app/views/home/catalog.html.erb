@@ -11,32 +11,6 @@
 <% end %>
 
 <div class="content">
-  <div style="color:#62A9AF;padding-bottom:15px;">Последние объявления</div>  
-  <% @last_advs.each do |adv| %>
-    <div style="padding:10px;width:350px;float:left;">
-      <div style="padding-bottom:5px;">
-        <%= render :partial => "shared/crumps", :locals => {:node_id => adv.node_id} %>
-      </div>
-      <div>
-        <%= render :partial => "shared/adv", :locals => {:adv => adv} %>
-      </div>
-    </div>
-  <% end %>
-  <div style="clear:both;"</div>
-</div>
-
-<div class="content" style="padding-bottom:25px;padding-top:20px;">
-  <div style="color:#62A9AF;padding-bottom:15px;">Города</div>  
-  <% @cities.each do |city| %>
-    <div style="width:200px;float:left;padding:10px;">
-      <a href="/advs/city/<%= city %>"><%= city %></a>
-    </div>
-  <% end %>
-  <div style="clear:both;"></div>
-</div>
-
-<div class="content">
-
   <% if @current_node.present? %>
     
     <div style="padding-bottom:15px;">

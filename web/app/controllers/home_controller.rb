@@ -34,6 +34,32 @@ class HomeController < ApplicationController
 
   end
 
+  def catalog
+    id = params[:id]
+    @menu_manager = MenuManager.new
+    if id.present?
+      node_id = id
+    else
+      if Tree.root.nil?
+        Tree.new(:name => "root").save
+      end
+      node_id = Tree.root.id.to_s      
+    end
+
+    @bread_crumps = Array.new
+    @current_node = @menu_manager.get_node(node_id)
+    @current_node.parent_ids.each do |parent_id|
+      n = Tree.find(parent_id)
+      @bread_crumps << n
+    end
+    @cats = @menu_manager.get_particular_menu node_id
+
+    if @current_node.leaf?
+      @advs = @menu_manager.get_advs @current_node
+    end
+  end
+
+
   def add_category
     parent_id = params[:parent_id]
     name = params[:name]
