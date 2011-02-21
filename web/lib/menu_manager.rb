@@ -17,8 +17,8 @@ class MenuManager
     return advs
   end
 
-  def get_one_adv parent_node, position
-    advs = Adv.where(:node_id => parent_node.id.to_s).desc("ctime").skip(position).limit(1)
+  def get_one_adv node_id, position, limit
+    advs = Adv.where(:node_id => node_id).desc("ctime").skip(position).limit(limit)
     return advs
   end
 
