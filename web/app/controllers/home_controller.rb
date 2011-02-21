@@ -30,6 +30,7 @@ class HomeController < ApplicationController
     end
 
     @cities = Adv.all.distinct(:city)
+    @last_advs = Adv.find(:all).desc(:ctime).limit(4)
 
   end
 
