@@ -29,6 +29,8 @@ class HomeController < ApplicationController
       @advs = @menu_manager.get_advs @current_node
     end
 
+    @cities = Adv.all.distinct(:city)
+
   end
 
   def add_category
