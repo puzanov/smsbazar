@@ -23,4 +23,9 @@ class AdvsController < ApplicationController
     adv.save
     redirect_to "/advs/edit/" + params[:id]
   end
+
+  def by_city
+    @advs = Adv.where(:city => params[:city_name]).desc(:ctime)
+    render :index
+  end
 end

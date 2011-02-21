@@ -1,5 +1,5 @@
 <div><%= adv.content %></div>
-<span><%= format_phone_number(adv.phone) %></span> <span><%= adv.city %></span>
+<span><%= format_phone_number(adv.phone) %></span> <a href="/advs/city/<%= adv.city %>"><%= adv.city %></a>
 
 <% if params[:admin] %>
   <span>
