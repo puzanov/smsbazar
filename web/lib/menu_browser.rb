@@ -17,6 +17,21 @@ class MenuBrowser
       return
     end
 
+    if message == "*0"
+      node_id = session.node_id
+      if @menu_manager.is_root node_id
+        self.show_first_menu(phone, message, pdu)
+        session.node_id = nil
+        @session_tracker.save_session(session, phone)
+        return
+      end
+      menu_item = @menu_manager.get_prev_menu(node_id)
+      @io.send(phone, menu_item.menu_text_items, pdu)
+      session.node_id = menu_item.node.id.to_s
+      @session_tracker.save_session(phone, session)
+      return
+    end
+
     unless session.browse_adv == true # дергаем каталог только тогда когда, когда не получаем сами объявления
       node_id = session.node_id
       node = @menu_manager.get_node node_id

@@ -12,6 +12,12 @@ class MenuManager
     return self.get_particular_menu node_id
   end  
 
+  def is_root node_id
+    node = self.get_node node_id
+    return node.root? unless node.nil?
+    return false
+  end
+
   def get_advs parent_node
     advs = Adv.find(:conditions => { :node_id => parent_node.id.to_s }).desc("ctime")
     return advs
@@ -22,6 +28,11 @@ class MenuManager
     return advs
   end
 
+  def get_prev_menu node_id
+    node = self.get_node node_id
+    return self.get_particular_menu node.parent.id.to_s
+  end
+  
   def get_menu_by_item_number node, item_number
     if node.leaf?
       menu_item = MenuItem.new
