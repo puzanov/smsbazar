@@ -14,4 +14,13 @@ class AdvsController < ApplicationController
     id = params[:id]
     @adv = Adv.find id
   end
+
+  def save
+    adv = Adv.find params[:id]
+    adv.content = params[:content]
+    adv.city = params[:city]
+    adv.price = params[:price]
+    adv.save
+    redirect_to "/advs/edit/" + params[:id]
+  end
 end
