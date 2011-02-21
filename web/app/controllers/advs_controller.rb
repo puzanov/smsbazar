@@ -9,4 +9,9 @@ class AdvsController < ApplicationController
     adv.destroy
     redirect_to :back
   end
+
+  def edit
+    id = params[:id]
+    @adv = Adv.find id
+  end
 end
