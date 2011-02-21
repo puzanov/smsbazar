@@ -16,4 +16,6 @@ Web::Application.routes.draw do
   match "/advs/save" => "advs#save"
   match "/advs/city/:city_name" => "advs#by_city"
   match "/help" => "help#index"
+
+  match "/search" => "search#index"
 end

@@ -53,6 +53,8 @@ GEM
       will_paginate (~> 3.0.pre)
     mongoid-tree (0.5.0)
       mongoid (>= 2.0.0.beta.20)
+    mongoid_search (0.1.2)
+      mongoid (~> 2.0.0.beta)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -91,6 +93,7 @@ DEPENDENCIES
   memcache
   mongoid (= 2.0.0.beta.20)
   mongoid-tree
+  mongoid_search
   rails (= 3.0.3)
   ruby-smpp (= 0.4.0)
   sqlite3-ruby
