@@ -8,4 +8,5 @@ gem "ruby-smpp", "0.4.0"
 gem "mongoid-tree", :require => 'mongoid/tree'
 gem "memcache"
 gem "dalli"
-gem "mongoid_search"
+gem "riddle"
+gem "mongoid-sphinx"
