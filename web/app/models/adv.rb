@@ -1,6 +1,6 @@
 class Adv
   include Mongoid::Document
-  include Mongoid::Search
+  include Mongoid::Sphinx
 
   field :phone, :type => String
   field :content, :type => String
@@ -12,5 +12,7 @@ class Adv
   index :content
   index :city
 
-  search_in :content, :city, { :match => :any }
+  search_index(:fields => [:content, :phone, :city], 
+               :attributes => [:ctime])
+
 end

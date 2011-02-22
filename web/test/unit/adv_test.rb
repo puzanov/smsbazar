@@ -26,11 +26,9 @@ class AdvTest < Test::Unit::TestCase
     adv.ctime = Time.new.to_i
     adv.save
     
-    puts adv._keywords
-
     puts Adv.search("семечки").size
 
-    adv.destroy
+    #adv.destroy
   end
 end
 

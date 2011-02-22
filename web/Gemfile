@@ -9,4 +9,4 @@ gem "mongoid-tree", :require => 'mongoid/tree'
 gem "memcache"
 gem "dalli"
 gem "riddle"
-gem "mongoid-sphinx"
+gem "mongoid-sphinx", :require => 'mongoid_sphinx'

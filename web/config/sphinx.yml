@@ -1,0 +1,11 @@
+development:
+  address: localhost
+  port: 9312
+
+staging:
+  address: localhost
+  port: 9312
+
+production:
+  address: localhost
+  port: 9312
