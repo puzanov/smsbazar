@@ -17,18 +17,19 @@ class AdvTest < Test::Unit::TestCase
     adv.destroy
   end
 
-  def test_search
-    adv = Adv.new
-    adv.phone = "996555112233"
-    adv.content = "Продаю семечки город Талас konteiner"
-    adv.node_id = "4d5a1ee776c66502d0000025"
-    adv.price = 10000
-    adv.ctime = Time.new.to_i
-    adv.save
-    
-    puts Adv.search("семечки").size
-
-    #adv.destroy
+  def test_migrate
+    advs = Adv.find :all
+    advs.each do |adv|
+      new_adv = Adv.new
+      new_adv.phone = adv.phone
+      new_adv.content = adv.content
+      new_adv.node_id = adv.node_id
+      new_adv.city = adv.city
+      new_adv.price = adv.price
+      new_adv.ctime = adv.ctime
+      adv.destroy
+      new_adv.save
+    end
   end
 end
 
