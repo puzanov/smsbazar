@@ -29,8 +29,8 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.6)
-    bson (1.1.5)
-    bson_ext (1.1.5)
+    bson (1.2.3)
+    bson_ext (1.2.3)
     builder (2.1.2)
     dalli (1.0.1)
     erubis (2.6.6)
@@ -44,14 +44,14 @@ GEM
       treetop (~> 1.4.8)
     memcache (1.2.13)
     mime-types (1.16)
-    mongo (1.1.5)
-      bson (>= 1.1.5)
+    mongo (1.2.3)
+      bson (>= 1.2.3)
     mongoid (2.0.0.beta.20)
       activemodel (~> 3.0)
       mongo (~> 1.1)
       tzinfo (~> 0.3.22)
       will_paginate (~> 3.0.pre)
-    mongoid-sphinx (0.0.7)
+    mongoid-sphinx (0.0.9)
       mongoid (>= 2.0.0.beta.19)
       riddle (~> 1.1.0)
     mongoid-tree (0.5.0)
@@ -83,14 +83,14 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    tzinfo (0.3.23)
+    tzinfo (0.3.24)
     will_paginate (3.0.pre2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson_ext (= 1.1.5)
+  bson_ext (= 1.2.3)
   dalli
   memcache
   mongoid (= 2.0.0.beta.20)
