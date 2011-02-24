@@ -82,7 +82,9 @@ class MenuBrowser
     if session.put_adv
       self.save_adv(phone, message, session.node_id)
       @io.send(phone, "Спасибо! Ваше объявление сохранено и доступно для поиска", pdu)
-      @session_tracker.delete_session phone
+      session.put_adv = false
+      @session_tracker.save_session(phone, session)
+      #@session_tracker.delete_session phone
     else
       @io.send(phone, "Отправьте ваше объявление! Укажите цену и город", pdu)
       session.put_adv = true
