@@ -10,3 +10,4 @@ gem "memcache"
 gem "dalli"
 gem "riddle"
 gem "mongoid-sphinx", :require => 'mongoid_sphinx'
+gem "will_paginate"

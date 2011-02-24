@@ -1,4 +1,4 @@
-class Adv
+class Adv 
   include Mongoid::Document
   include Mongoid::Sphinx
 

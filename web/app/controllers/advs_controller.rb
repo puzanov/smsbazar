@@ -1,6 +1,8 @@
 class AdvsController < ApplicationController
   def index
-    @advs = Adv.find(:all).desc(:ctime)   
+    WillPaginate::ViewHelpers.pagination_options[:previous_label] = "&#8592;&nbsp;Назад"
+    WillPaginate::ViewHelpers.pagination_options[:next_label] = "Далее&nbsp;&#8594;"
+    @advs = Adv.find(:all).desc(:ctime).paginate :page => params[:page], :per_page => 5
   end
 
   def delete
@@ -25,7 +27,7 @@ class AdvsController < ApplicationController
   end
 
   def by_city
-    @advs = Adv.where(:city => params[:city_name]).desc(:ctime)
+    @advs = Adv.where(:city => params[:city_name]).desc(:ctime).paginate :page => params[:page], :per_page => 5
     render :index
   end
 end

@@ -100,3 +100,4 @@ DEPENDENCIES
   riddle
   ruby-smpp (= 0.4.0)
   sqlite3-ruby
+  will_paginate
