@@ -12,7 +12,7 @@ class Adv
   index :content
   index :city
 
-  search_index(:fields => [:content, :phone, :city], 
+  search_index(:fields => [:content, :phone, :city, :price], 
                :attributes => [:ctime])
 
 end
