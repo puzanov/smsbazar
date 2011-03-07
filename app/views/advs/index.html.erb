@@ -1,0 +1,15 @@
+<div class="content">
+  <% @advs.each do |adv| %>
+    <div style="padding-bottom:30px;">
+      <div style="padding-bottom:5px;">
+        <%= render :partial => "shared/crumps", :locals => {:node_id => adv.node_id} %>
+      </div>
+      <div>
+        <%= render :partial => "shared/adv", :locals => {:adv => adv} %>
+      </div>
+    </div>
+  <% end %>
+  <div>
+    <%= will_paginate @advs %>
+  </div>
+</div>

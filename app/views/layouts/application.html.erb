@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMS Базар</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "jquery.editinplace" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <center>  
+
+  <div id="top_info">
+    <div style="float:left;"><a href="/" style="color:white">SMS Базар</a></div>
+    <div style="float:right;font-size:14px;padding-top:12px;">
+      <a href="/search" style="background-color:#0D76C6;margin-right:10px;color:white;padding:3px;">Поиск</a>
+      <a href="/help" style="color:white;margin-right:10px;">Куда и как отправлять SMS?</a>
+      <a href="/advs" style="color:white;margin-right:10px;">Все объявления</a>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  
+  <div id="top_black_box">
+  </div>
+  
+  <div id="main_content_box">
+    <%= yield %>
+  </div>
+
+  </center>
+</body>
+</html>

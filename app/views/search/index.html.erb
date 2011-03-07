@@ -1,0 +1,21 @@
+<div class="content">
+  <%= form_tag(search_path, :method => "get") do %>
+    <%= label_tag(:q, "Что ищем?") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Найти") %>
+  <% end %>
+  <div style="padding-top:15px;">
+    <% unless @advs.nil? %>
+    <% @advs.each do |adv| %>
+      <div style="padding:10px;">
+        <div style="padding-bottom:5px;">
+          <%= render :partial => "shared/crumps", :locals => {:node_id => adv.node_id} %>
+        </div>
+        <div>
+          <%= render :partial => "shared/adv", :locals => {:adv => adv} %>
+        </div>
+      </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>

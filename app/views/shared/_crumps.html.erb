@@ -1,0 +1,9 @@
+<div class="bread_crumps" style="font-size:12px;">
+  <% crumps = get_crumps(node_id) %>
+  <% crumps.each do |crump| %>
+    <% if crump.name == "root" %>
+      <% crump.name = "Каталог" %>
+    <% end %>
+    &#8592;&nbsp;<a href="/cat/<%= crump.id %>"><%=crump.name%></a>
+  <% end %>
+</div>

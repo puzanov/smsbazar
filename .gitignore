@@ -1,3 +1,8 @@
-*.log.*
-smpptest/simulator/sim.*
-web/log/
+nohup.out
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+vendor/cache/*
+db/sphinx
+dump

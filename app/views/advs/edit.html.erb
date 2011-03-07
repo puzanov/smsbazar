@@ -1,0 +1,17 @@
+<div class="content">
+  <h3>Редактируем объявление</h3>
+  <%= form_tag(:controller => "advs", :action => "save") do %>        
+    <%= hidden_field_tag(:id, @adv.id.to_s) %>
+    
+    <div><%= label_tag(:content, "Текст объявления") %></div>
+    <div><%= text_area_tag(:content, @adv.content, :size => "24x6") %></div>
+    
+    <div><%= label_tag(:city, "Город") %></div>
+    <div><%= text_field_tag(:city, @adv.city) %></div>
+    
+    <div><%= label_tag(:price, "Цена") %></div>
+    <div><%= text_field_tag(:price, @adv.price) %></div>
+
+    <div><%= submit_tag("Сохранить") %></div>
+  <% end %>
+</div>
