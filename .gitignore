@@ -4,5 +4,6 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 vendor/cache/*
+vendor/bundle/*
 db/sphinx
 dump
