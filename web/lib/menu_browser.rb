@@ -115,8 +115,8 @@ class MenuBrowser
 
   def show_first_menu(phone, message, pdu)
     items = Array.new
-    items << "1 - Купить"
-    items << "2 - Продать"
+    items << "1 - Смотреть объявления"
+    items << "2 - Дать объявление"
     @io.send(phone, items, pdu)
     sms_session = SmsSession.new
     @session_tracker.save_session(phone, sms_session) # empty session
