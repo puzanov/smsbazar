@@ -1,1 +1,0 @@
-nohup rake sms &
