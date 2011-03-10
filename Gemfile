@@ -14,3 +14,5 @@ gem "will_paginate"
 group :test_converter do
   gem "ruby-smpp", "0.4.0", :git => "git://github.com/raykrueger/ruby-smpp.git", :require => "smpp"
 end
+
+gem "haml", "3.0.25"
