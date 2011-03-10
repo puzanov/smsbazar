@@ -10,3 +10,7 @@ gem "dalli"
 gem "riddle"
 gem "mongoid-sphinx", :require => 'mongoid_sphinx'
 gem "will_paginate"
+
+group :test_converter do
+  gem "ruby-smpp", "0.4.0", :git => "git://github.com/raykrueger/ruby-smpp.git", :require => "smpp"
+end

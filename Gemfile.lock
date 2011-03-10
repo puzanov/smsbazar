@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/raykrueger/ruby-smpp.git
-  revision: f4770ce6ed363d3776c19e8cce8085d92e7952ca
+  revision: 1316e6b7f8a46d8fb3d3cdc90fef5bf4ff41f03c
   specs:
     ruby-smpp (0.4.0)
       eventmachine (>= 0.10.0)

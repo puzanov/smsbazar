@@ -20,7 +20,12 @@ class SampleGateway
   # expose SMPP transceiver's send_mt method
   def self.send_mt(*args)
     @@mt_id += 1
-    @@tx.send_mt(@@mt_id, *args)
+    if args[2].size > 70
+      puts "this is a long message"
+      @@tx.send_concat_mt(@@mt_id, *args)
+    else
+      @@tx.send_mt(@@mt_id, *args)
+    end  
   end
     
   def start(config)
@@ -49,10 +54,10 @@ class SampleGateway
 
   def mo_received(transceiver, pdu)
     puts "Delegate: mo_received: from #{pdu.source_addr} to #{pdu.destination_addr}: #{pdu.short_message}"
-    puts "Data coding #{pdu.data_coding}"
     sc = SmsConverter.new
     begin
       if pdu.udh.kind_of?(Array)
+        puts "zomg! we have udh"
         if pdu.udh.length == 6 && pdu.udh[1] == 0
           if pdu.udh[4] != pdu.udh[5]
             if @@long_messages[pdu.udh[3]].nil?
@@ -63,12 +68,13 @@ class SampleGateway
             return
           else
             @@long_messages[pdu.udh[3]] = @@long_messages[pdu.udh[3]] + pdu.short_message
-            sms_text = sc.convert_long_text @@long_messages[pdu.udh[3]]
+            sms_text = @@long_messages[pdu.udh[3]]
             @@long_messages.delete(pdu.udh[3])
           end
         end
       else
-        sms_text = sc.get_converted_sms_text pdu
+        puts "mmm. simple message in one pdu"
+        sms_text = pdu.short_message
       end
       @menu_browser = MenuBrowser.new
       @menu_browser.menu_manager = MenuManager.new
@@ -102,9 +108,7 @@ class SampleGateway
     }
 
     sc = SmsConverter.new
-    puts data
     sms_to_send = sc.convert_text(data, pdu)
-    puts sms_to_send
     SampleGateway.send_mt("1172", phone, sms_to_send, config)    
 
   end
